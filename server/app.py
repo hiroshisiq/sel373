@@ -2,6 +2,7 @@
 from importlib import import_module
 from flask import Flask, render_template, Response
 #from camera_opencv import Camera
+import pyaudio
 
 app = Flask(__name__)
 
@@ -35,11 +36,23 @@ def about_page():
 #                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 def generateAudio():
-	with open("/home/hiroshi.siq/Documents/sel373/server/static/test.wav", "rb") as fwav:
-		data = fwav.read(1024)
-		while data:
-			yield data
-			data = fwav.read(1024)
+	CHUNK = 1024
+	FORMAT = pyaudio.paInt16
+	CHANNELS = 1
+	WAVE_OUTPUT_FILENAME = "teste.wav"
+	RATE = 44100
+	RECORD_SECONDS = 3600
+	p = pyaudio.PyAudio()
+	stream = p.open(format=FORMAT,
+                channels=CHANNELS,
+                rate=RATE,
+                input=True,
+                output=True,
+                frames_per_buffer=CHUNK)
+
+	for i in range(0, int(RATE/CHUNK*RECORD_SECONDS)):
+   		data  = stream.read(CHUNK)
+    		stream.write(data)
 
 @app.route("/audio_feed")
 def audio_feed():
