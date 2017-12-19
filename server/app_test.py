@@ -49,35 +49,32 @@ def generateAudio():
                 channels=CHANNELS,
                 rate=RATE,
                 input=True,
-                frames_per_buffer=CHUNK)
-
-	streamOut = p2.open(format=FORMAT,
-                channels=CHANNELS,
-                rate=RATE,
-                output=True,
-                frames_per_buffer=CHUNK)
+                frames_per_buffer=CHUNK,
+                input_device_index= 1 )
 
 	frames  =[]
-	for i in range(0, int(RATE/CHUNK*RECORD_SECONDS)):
-#	data = streamIn.read(CHUNK,exception_on_overflow = False)
-#	while data:
-   		data  = streamIn.read(CHUNK, exception_on_overflow = False)
-    		frames.append(data)
-		streamOut.write(data)
-		yield data
-
-	wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
-	wf.setnchannels(CHANNELS)
-	wf.setsampwidth(p1.get_sample_size(FORMAT))
-	wf.setframerate(RATE)
-	wf.writeframes(b''.join(frames))
-	wf.close()
+	
+	with streamIn.read(CHUNK,exception_on_overflow = False) as data:
+        	while data:
+            		yield data
+            		data  = streamIn.read(CHUNK, exception_on_overflow = False)
+            		frames.append(data)
+#		streamOut.write(data)
+            
+#	wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+#	wf.setnchannels(CHANNELS)
+#	wf.setsampwidth(p1.get_sample_size(FORMAT))
+#	wf.setframerate(RATE)
+#	wf.writeframes(b''.join(frames))
+#	wf.close()
 
 @app.route("/audio_feed")
 def audio_feed():
-    return Response(generateAudio(), mimetype="audio/x-wav;codec=pcm")
+    	return Response(generateAudio(), mimetype="audio/x-wav;codec=pcm")
+
 
 if __name__ == '__main__':
 #	app.run(host='143.107.235.0', threaded=True)
 	app.run(host='10.235.10.44', threaded=True)
+#	app.run(host='0.0.0.0',threaded=True)
 
