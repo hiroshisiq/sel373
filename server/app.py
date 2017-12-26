@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from importlib import import_module
 from flask import Flask, render_template, Response, request
-from camera_opencv import Camera
+#from camera_opencv import Camera
 from gpio_control import GPIOControl
 
 app = Flask(__name__)
@@ -33,18 +33,19 @@ def getapp_page():
 def about_page():
 	return render_template('about.html')
 
-def genarateVideo(camera):
-    """Video streaming generator function."""
-    while True:
-        frame = camera.get_frame()
-        yield (b'--frame\r\n'
-               b'Content-Type: image/jpg\r\n\r\n' + frame + b'\r\n')
+#def genarateVideo(camera):
+#    """Video streaming generator function."""
+#    while True:
+#        frame = camera.get_frame()
+#        yield (b'--frame\r\n'
+#               b'Content-Type: image/jpg\r\n\r\n' + frame + b'\r\n')
 
 @app.route('/video_feed')
 def video_feed():
-    """Video streaming route. Put this in the src attribute of an img tag."""
-    return Response(genarateVideo(Camera()),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
+    return 'Hi'
+#    """Video streaming route. Put this in the src attribute of an img tag."""
+#    return Response(genarateVideo(Camera()),
+#                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 def generateAudio():
 	with open("/home/hiroshi.siq/Documents/sel373/server/static/test.wav", "rb") as fwav:
@@ -59,4 +60,4 @@ def audio_feed():
 
 if __name__ == '__main__':
 #	app.run(host='0.0.0.0', threaded=True)
-	app.run(debug=True, host='10.42.14.232', threaded=True, port=8080)
+	app.run(host='10.235.10.44', threaded=True, port=8080)
