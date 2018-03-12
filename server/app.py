@@ -11,4 +11,4 @@ def webcam_page():
 	return render_template('webcam.html')
 
 if __name__ == '__main__':
-	app.run(debug=True, host='10.42.14.232')
+	app.run(debug=True, host='10.42.14.232', port=int("8080"))
