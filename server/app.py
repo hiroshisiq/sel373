@@ -1,5 +1,7 @@
+#!/usr/bin/env python
+from importlib import import_module
 from flask import Flask, render_template, Response
-from camera import VideoCamera
+from camera_opencv import Camera
 
 app = Flask(__name__)
 
@@ -7,20 +9,31 @@ app = Flask(__name__)
 def index():
 	return render_template('index.html')
 
-@app.route('/webcam')
-def webcam_page():
-	return render_template('webcam.html')
+@app.route('/camera')
+def camera_page():
+	return render_template('camera.html')
 
-def genarateImage(camera):
-	while True:
-		frame = camera.get_frame()
-		yield(b'--frame\r\n'
-               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n'))
+@app.route('/getapp')
+def getapp_page():
+	return render_template('getapp.html')
 
-@app.route('/test')
-def test_page():
-	return Response(genarateImage(VideoCamera()),
+@app.route('/about')
+def about_page():
+	return render_template('about.html')
+
+def gen(camera):
+    """Video streaming generator function."""
+    while True:
+        frame = camera.get_frame()
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpg\r\n\r\n' + frame + b'\r\n')
+
+@app.route('/video_feed')
+def video_feed():
+    """Video streaming route. Put this in the src attribute of an img tag."""
+    return Response(gen(Camera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
-	app.run(debug=True, host='10.42.14.232', port=int("8080"))
+	app.run(host='0.0.0.0', threaded=True)
+#	app.run(debug=True, host='10.42.14.232', port=int("8080"))
