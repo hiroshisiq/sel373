@@ -1,3 +1,4 @@
+//============================= BUTTONS =============================//
 function videoButtonClick() {
   var button = document.getElementById("videoButton");
 
@@ -15,11 +16,14 @@ function videoButtonClick() {
 
 function audioButtonClick() {
   var button = document.getElementById("audioButton");
+  var audio = document.getElementById("audiofeed");
 
   if (button.innerHTML == "Start Audio") {
     button.innerHTML = "Stop Audio";
+    audio.muted = false;
   } else {
     button.innerHTML = "Start Audio";
+    audio.muted = true;
   }
 }
 function microButtonClick() {
@@ -31,3 +35,30 @@ function microButtonClick() {
     button.innerHTML = "Start Microphone";
   }
 }
+
+//============================= Audio =============================//
+
+  // function hasGetUserMedia() {
+  //   return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+  // }
+  //
+  // if (hasGetUserMedia()) {
+  //   // Good to go!
+  // } else {
+  //   alert('getUserMedia() is not supported by your browser');
+  // }
+
+  // const constraints = { video: false, audio: true};
+  // const audio = document.querySelector('audio');
+  //
+  // function handleSuccess(stream) {
+  //   audio.srcObject = stream;
+  //   var microphone = context.createMediaStreamSource(stream);
+  //   microphone.connect(context.destination);
+  // }
+  //
+  // function handleError(error) {
+  //   console.error('Reeeejected!', error);
+  // }
+  //
+  // navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);

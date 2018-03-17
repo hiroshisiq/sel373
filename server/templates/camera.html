@@ -36,9 +36,15 @@
       </div>
     </section>
 
+    <!-- <audio id="audiofeed" src="{{ url_for('audio_feed') }}" loop></audio> -->
+
+    <audio id="audiofeed" autoplay>
+      <source src="http://127.0.0.1:5000/audio_feed"/>
+    </audio>
+
     <div id="container">
       <button type="button" id="videoButton" onclick="videoButtonClick()">Stop Video</button>
-      <button type="button" id="audioButton" onclick="audioButtonClick()">Start Audio</button>
+      <button type="button" id="audioButton" onclick="audioButtonClick()">Stop Audio</button>
       <button type="button" id="microButton" onclick="microButtonClick()">Start Microphone</button>
     </div>
 

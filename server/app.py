@@ -21,7 +21,7 @@ def getapp_page():
 def about_page():
 	return render_template('about.html')
 
-def gen(camera):
+def genarateVideo(camera):
     """Video streaming generator function."""
     while True:
         frame = camera.get_frame()
@@ -31,8 +31,19 @@ def gen(camera):
 @app.route('/video_feed')
 def video_feed():
     """Video streaming route. Put this in the src attribute of an img tag."""
-    return Response(gen(Camera()),
+    return Response(genarateVideo(Camera()),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
+
+def generateAudio():
+	with open("/home/hiroshi.siq/Documents/sel373/server/static/test.wav", "rb") as fwav:
+		data = fwav.read(1024)
+		while data:
+			yield data
+			data = fwav.read(1024)
+
+@app.route("/audio_feed")
+def audio_feed():
+    return Response(generateAudio(), mimetype="audio/x-wav")
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', threaded=True)
