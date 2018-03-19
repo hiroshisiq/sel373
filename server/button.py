@@ -18,5 +18,7 @@ GPIO.add_event_detect(23, GPIO.FALLING, callback=my_callback, bouncetime=300)
 def my_callback(channel):  
     print "Got something"
 
-#RPIO.wait_for_interrupt()
+RPIO.wait_for_interrupts(threaded=True)
+while True:
+    
 GPIO.clean_up()
