@@ -24,7 +24,8 @@ stream = p.open(format=FORMAT,
                 rate=RATE,
                 input=True,
                 output=True,
-                frames_per_buffer=CHUNK)
+                frames_per_buffer=CHUNK,
+                input_device_index=1)
 
 
 frames = []
@@ -32,7 +33,7 @@ frames = []
 for i in range(0, int(RATE/CHUNK*RECORD_SECONDS)):
     data  = stream.read(CHUNK)
     frames.append(data)
-# stream.write(data)
+    stream.write(data)
 #    yield data 
 
 
