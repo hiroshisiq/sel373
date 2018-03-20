@@ -8,8 +8,7 @@ function videoButtonClick() {
     // video.scr = "/static/img/000.jpg";
   } else {
     button.innerHTML = "Stop Video";
-    // document.getElementById("videoimage").src = "http://127.0.0.1:5000/video_feed";
-    document.getElementById("videoimage").src = "/static/img/nocamera.gif";
+    document.getElementById("videoimage").src = "http://127.0.0.1:5000/video_feed";
   }
 
   document.load();
