@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 from importlib import import_module
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, request
 from camera_opencv import Camera
+from gpio_control import GPIOControl
 
 app = Flask(__name__)
 
@@ -9,9 +10,20 @@ app = Flask(__name__)
 def index():
 	return render_template('index.html')
 
-@app.route('/camera')
+@app.route('/camera', methods = ['GET', 'POST'])
 def camera_page():
 	return render_template('camera.html')
+
+@app.route('/handler', methods = ['GET', 'POST'])
+def handler_page():
+	if request.method == 'POST':
+		print('Handling post')
+		control = GPIOControl()
+		control.openDoor()
+		return 'Handle Post'
+	if request.method == 'GET':
+		print('Handling post')
+		return 'Handle Get'
 
 @app.route('/getapp')
 def getapp_page():
@@ -46,5 +58,5 @@ def audio_feed():
     return Response(generateAudio(), mimetype="audio/x-wav")
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', threaded=True)
-#	app.run(debug=True, host='10.42.14.232', port=8080)
+#	app.run(host='0.0.0.0', threaded=True)
+	app.run(debug=True, host='10.42.14.232', threaded=True, port=8080)
