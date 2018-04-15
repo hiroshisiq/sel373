@@ -46,5 +46,5 @@ def audio_feed():
     return Response(generateAudio(), mimetype="audio/x-wav")
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', threaded=True)
-#	app.run(debug=True, host='10.42.14.232', port=8080)
+#	app.run(host='192.168.0.103', threaded=True)
+	app.run(host='10.235.10.44', threaded=True,  port=8080)
