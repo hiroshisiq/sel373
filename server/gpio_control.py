@@ -11,4 +11,4 @@ class GPIOControl():
         GPIO.output(11,GPIO.HIGH)
         time.sleep(2)
         GPIO.output(11,GPIO.LOW)
-	return
+        return
