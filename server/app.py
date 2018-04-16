@@ -23,18 +23,18 @@ def getapp_page():
 def about_page():
 	return render_template('about.html')
 
-#def genarateVideo(camera):
-#    """Video streaming generator function."""
-#    while True:
-#        frame = camera.get_frame()
-#        yield (b'--frame\r\n'
-#               b'Content-Type: image/jpg\r\n\r\n' + frame + b'\r\n')
+def genarateVideo(camera):
+    """Video streaming generator function."""
+    while True:
+        frame = camera.get_frame()
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpg\r\n\r\n' + frame + b'\r\n')
 
-#@app.route('/video_feed')
-#def video_feed():
-#    """Video streaming route. Put this in the src attribute of an img tag."""
-#    return Response(genarateVideo(Camera()),
-#                    mimetype='multipart/x-mixed-replace; boundary=frame')
+@app.route('/video_feed')
+def video_feed():
+    """Video streaming route. Put this in the src attribute of an img tag."""
+    return Response(genarateVideo(Camera()),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 def generateAudio():
 	CHUNK = 1024
@@ -58,20 +58,22 @@ def generateAudio():
                 frames_per_buffer=CHUNK)
 
 	frames  =[]
-	for i in range(0, int(RATE/CHUNK*RECORD_SECONDS)):
+#	for i in range(0, int(RATE/CHUNK*RECORD_SECONDS)):
 #	data = streamIn.read(CHUNK,exception_on_overflow = False)
-#	while data:
-   		data  = streamIn.read(CHUNK, exception_on_overflow = False)
-    		frames.append(data)
-		streamOut.write(data)
-		yield data
-
-	wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
-	wf.setnchannels(CHANNELS)
-	wf.setsampwidth(p1.get_sample_size(FORMAT))
-	wf.setframerate(RATE)
-	wf.writeframes(b''.join(frames))
-	wf.close()
+	with open('/home/sel373/server/test.wav','rb') as wav:
+   		data = wav.read(2014)
+		#data  = streamIn.read(CHUNK, exception_on_overflow = False)
+    		#frames.append(data)
+		#streamOut.write(data)
+		while data:
+			yield data
+			data = wav.read(1024)
+#	wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+#	wf.setnchannels(CHANNELS)
+#	wf.setsampwidth(p1.get_sample_size(FORMAT))
+#	wf.setframerate(RATE)
+#	wf.writeframes(b''.join(frames))
+#	wf.close()
 
 @app.route("/audio_feed")
 def audio_feed():

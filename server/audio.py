@@ -12,18 +12,19 @@ import wave
 #record
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
-CHANNELS = 2
+CHANNELS = 1
 WAVE_OUTPUT_FILENAME = "teste.wav"
-RATE = 44100
-RECORD_SECONDS = 5
-
+RATE = 48000
+RECORD_SECONDS = 2
+print('oi')
 p = pyaudio.PyAudio()
 
 stream = p.open(format=FORMAT,
                 channels=CHANNELS,
                 rate=RATE,
                 input=True,
-                frames_per_buffer=CHUNK)
+                frames_per_buffer=CHUNK,
+		input_device_index=4)
 
 
 frames = []
@@ -52,9 +53,9 @@ for i in range(0, int(RATE/CHUNK*RECORD_SECONDS)):
 #wf.close()
 
 
-#stream.stop_stream()
-#stream.close()
-#p.terminate()
+stream.stop_stream()
+stream.close()
+p.terminate()
 
 
 
