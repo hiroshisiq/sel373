@@ -13,6 +13,17 @@ def index():
 def camera_page():
 	return render_template('camera.html')
 
+@app.route('/handler', methods = ['GET', 'POST'])
+def handler_page():
+	if request.method == 'POST':
+		print('Handling post')
+		control = GPIOControl()
+		control.openDoor()
+		return 'Handle Post'
+	if request.method == 'GET':
+		print('Handling post')
+		return 'Handle Get'
+
 @app.route('/getapp')
 def getapp_page():
 	return render_template('getapp.html')
