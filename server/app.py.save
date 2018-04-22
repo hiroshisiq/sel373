@@ -71,14 +71,10 @@ def generateAudio():
 #		data = wav.read(CHUNK)
 	w=open(filepathtest,'rb')
 	data=w.read(CHUNK)
-	while data:
-		yield data
-		w.seek(0,0)
-		data = w.read(CHUNK)
 	w.close()
 
  	while data:
-		print('stringmuitogrande')
+#		print('stringmuitogrande')
 
 #			data = wf.read(CHUNK)
 #			wf.close()
@@ -89,13 +85,13 @@ def generateAudio():
                	wf.setnchannels(CHANNELS)
                 wf.setsampwidth(p1.get_sample_size(FORMAT))
        	        wf.setframerate(RATE)
-		wf.writeframes(data)
+		wf.writeframes(b''.join(data))
 		wf.close()
 
-		w = open(filepath,'rb')
+		with open(filepath,'rb') as w:
 		#wav.seek(0,0)
-		data = w.read(CHUNK)
-		w.close()
+			data = w.read(CHUNK)
+			w.close()
 
 
 @app.route("/audio_feed")

@@ -43,13 +43,13 @@ def generateAudio():
 	WAVE_OUTPUT_FILENAME = "teste.wav"
 	RATE = 48000
 	RECORD_SECONDS = 10
-	p1 = pyaudio.PyAudio()
+#	p1 = pyaudio.PyAudio()
 #	p2 = pyaudio.PyAudio()
-	streamIn = p1.open(format=FORMAT,
-                channels=CHANNELS,
-                rate=RATE,
-                input=True,
-                frames_per_buffer=CHUNK)
+#	streamIn = p1.open(format=FORMAT,
+#                channels=CHANNELS,
+#                rate=RATE,
+#                input=True,
+#                frames_per_buffer=CHUNK)
 
 #	streamOut = p2.open(format=FORMAT,
 #                channels=CHANNELS,
@@ -57,45 +57,35 @@ def generateAudio():
 #                output=True,
 #                frames_per_buffer=CHUNK)
 
-
+	frames  =[]
 #	for i in range(0, int(RATE/CHUNK*RECORD_SECONDS)):
 #	data = streamIn.read(CHUNK,exception_on_overflow = False)
 # 	data = wav.read(2048)
-
+	#data  = streamIn.read(CHUNK, exception_on_overflow = False)
  	#frames.append(data)
 	#streamOut.write(data)
 	filepath = '/home/pi/sel373/server/teste.wav'
-	filepathtest = '/home/pi/sel373/server/teste2.wav'
-#	with open(filepath,'rb')as wav:
+	with open(filepath,'rb') as wav:
 
-#		data = wav.read(CHUNK)
-	w=open(filepathtest,'rb')
-	data=w.read(CHUNK)
-	while data:
-		yield data
-		w.seek(0,0)
-		data = w.read(CHUNK)
-	w.close()
+		data = wav.read(CHUNK)
+		data=1
+		while data:
+			print('ihfjbfhbshbfhsbdkfbshkfb')
 
- 	while data:
-		print('stringmuitogrande')
+			data = wf.read(CHUNK)
+			wf.close()
+			yield data
+			data = streamIn.read(CHUNK)
 
-#			data = wf.read(CHUNK)
-#			wf.close()
-		yield data
-		data = streamIn.read(CHUNK)
 
-               	wf = wave.open(filepath, 'wb')
-               	wf.setnchannels(CHANNELS)
-                wf.setsampwidth(p1.get_sample_size(FORMAT))
-       	        wf.setframerate(RATE)
-		wf.writeframes(data)
-		wf.close()
+			frames=data
 
-		w = open(filepath,'rb')
-		#wav.seek(0,0)
-		data = w.read(CHUNK)
-		w.close()
+
+			wf = wave.open(filepath, 'wb')
+			wf.setnchannels(CHANNELS)
+			wf.setsampwidth(p1.get_sample_size(FORMAT))
+			wf.setframerate(RATE)
+			wf.writeframes(b''.join(frames))
 
 
 @app.route("/audio_feed")

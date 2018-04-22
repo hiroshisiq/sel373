@@ -26,7 +26,7 @@ def about_page():
 def genarateVideo(camera):
     """Video streaming generator function."""
     while True:
-        frame = [] #camera.get_frame()
+        frame = camera.get_frame()
         yield (b'--frame\r\n'
                b'Content-Type: image/jpg\r\n\r\n' + frame + b'\r\n')
 
@@ -43,13 +43,13 @@ def generateAudio():
 	WAVE_OUTPUT_FILENAME = "teste.wav"
 	RATE = 48000
 	RECORD_SECONDS = 10
-	p1 = pyaudio.PyAudio()
+#	p1 = pyaudio.PyAudio()
 #	p2 = pyaudio.PyAudio()
-	streamIn = p1.open(format=FORMAT,
-                channels=CHANNELS,
-                rate=RATE,
-                input=True,
-                frames_per_buffer=CHUNK)
+#	streamIn = p1.open(format=FORMAT,
+#                channels=CHANNELS,
+#                rate=RATE,
+#                input=True,
+#                frames_per_buffer=CHUNK)
 
 #	streamOut = p2.open(format=FORMAT,
 #                channels=CHANNELS,
@@ -57,46 +57,30 @@ def generateAudio():
 #                output=True,
 #                frames_per_buffer=CHUNK)
 
-
+	frames  =[]
 #	for i in range(0, int(RATE/CHUNK*RECORD_SECONDS)):
 #	data = streamIn.read(CHUNK,exception_on_overflow = False)
 # 	data = wav.read(2048)
-
+	#data  = streamIn.read(CHUNK, exception_on_overflow = False)
  	#frames.append(data)
 	#streamOut.write(data)
 	filepath = '/home/pi/sel373/server/teste.wav'
-	filepathtest = '/home/pi/sel373/server/teste2.wav'
-#	with open(filepath,'rb')as wav:
+	with open(filepath,'rb') as wav:
+		data = wav.read(2048)
+		while data:
+			yield data
+			data = wav.read(2048)
 
-#		data = wav.read(CHUNK)
-	w=open(filepathtest,'rb')
-	data=w.read(CHUNK)
-	while data:
-		yield data
-		w.seek(0,0)
-		data = w.read(CHUNK)
-	w.close()
 
- 	while data:
-		print('stringmuitogrande')
 
-#			data = wf.read(CHUNK)
-#			wf.close()
-		yield data
-		data = streamIn.read(CHUNK)
 
-               	wf = wave.open(filepath, 'wb')
-               	wf.setnchannels(CHANNELS)
-                wf.setsampwidth(p1.get_sample_size(FORMAT))
-       	        wf.setframerate(RATE)
-		wf.writeframes(data)
-		wf.close()
 
-		w = open(filepath,'rb')
-		#wav.seek(0,0)
-		data = w.read(CHUNK)
-		w.close()
-
+#	wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+#	wf.setnchannels(CHANNELS)
+#	wf.setsampwidth(p1.get_sample_size(FORMAT))
+#	wf.setframerate(RATE)
+#	wf.writeframes(b''.join(frames))
+#	wf.close()
 
 @app.route("/audio_feed")
 def audio_feed():
