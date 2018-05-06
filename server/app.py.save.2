@@ -69,7 +69,6 @@ def generateAudio():
 	frames=[]
 	buffer = array.array('f')
 	while True:
-		frames=[]
 		for i in range(0, int(RATE/CHUNK*2)): #RECORD_SECONDS)):
                         #data  = streamIn.read(CHUNK)
 			buffer.fromstring(recorder.read()[1])

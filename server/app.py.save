@@ -73,7 +73,7 @@ def generateAudio():
 	data=w.read(CHUNK)
 	w.close()
 
- 	while data:
+	while data:
 #		print('stringmuitogrande')
 
 #			data = wf.read(CHUNK)
@@ -81,10 +81,10 @@ def generateAudio():
 		yield data
 		data = streamIn.read(CHUNK)
 
-               	wf = wave.open(filepath, 'wb')
-               	wf.setnchannels(CHANNELS)
-                wf.setsampwidth(p1.get_sample_size(FORMAT))
-       	        wf.setframerate(RATE)
+		wf = wave.open(filepath, 'wb')
+		wf.setnchannels(CHANNELS)
+		wf.setsampwidth(p1.get_sample_size(FORMAT))
+		wf.setframerate(RATE)
 		wf.writeframes(b''.join(data))
 		wf.close()
 
