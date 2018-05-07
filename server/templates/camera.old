@@ -31,15 +31,14 @@
     <!-- content body -->
     <section id="slider">
       <div id="videofeed">
-        <img id="videoimage" src="{{ url_for('video_feed') }}" alt="Camera">
-        <!-- <img id="videoimage" src="/static/img/180x150.gif" alt="Camera"/> -->
+          <img id="videoimage" src="http://highspeeddoggos.tk:8082/video_feed" alt="Camera"/> 
       </div>
     </section>
 
-   <!-- <audio id="audiofeed" src="{{ url_for('audio_feed') }}" loop></audio>--> 
+    <!--<audio id="audiofeed" src="{{ url_for('audio_feed') }}" loop></audio>--> 
 
     <audio id="audiofeed" autoplay>
-      <source src="http://highspeeddoggos.tk:8080/audio_feed"/>
+      <source src="http://143.107.235.44:8082/audio_feed"/>
     </audio>
 
     <div id="container">
