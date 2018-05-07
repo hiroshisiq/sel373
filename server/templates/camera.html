@@ -35,10 +35,10 @@
       </div>
     </section>
 
-    <!--<audio id="audiofeed" src="{{ url_for('audio_feed') }}" loop></audio>--> 
+   <!-- <audio id="audiofeed" src="{{ url_for('audio_feed') }}" loop></audio>--> 
 
     <audio id="audiofeed" autoplay>
-      <source src="http://143.107.235.44:8082/audio_feed"/>
+      <source src="http://highspeeddoggos.tk:8080/audio_feed"/>
     </audio>
 
     <div id="container">
@@ -46,6 +46,18 @@
       <button type="button" id="audioButton" onclick="audioButtonClick()">Stop Audio</button>
       <button type="button" id="microButton" onclick="microButtonClick()">Start Microphone</button>
     </div>
+
+
+    <iframe name="votar" style="display:none;" hidden="true"></iframe>
+    <form action="http://143.107.235.44:8080/handler" method="post" target="votar">
+      <input type="text" name="projectFilepath" hidden="true">
+      <input type="submit" onclick="return confirm('Are you sure?')" value="Open Door (pin 11)">
+    </form>
+
+    <!-- <form method="post">
+        <input type="text" name="projectFilepath" hidden="true">
+        <input type="submit" value="Open Door (pin 11)">
+    </form> -->
 
   </div>
 

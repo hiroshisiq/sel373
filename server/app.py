@@ -1,11 +1,11 @@
 from importlib import import_module
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, request
 from camera_opencv import Camera
 import pyaudio
 import wave
 import time
 import numpy as np
-
+from gpio_control import GPIOControl
 
 app = Flask(__name__)
 
@@ -16,6 +16,17 @@ def index():
 @app.route('/camera')
 def camera_page():
         return render_template('camera.html')
+
+@app.route('/handler', methods = ['GET', 'POST'])
+def handler_page():
+	if request.method == 'POST':
+		print('Handling post')
+		control = GPIOControl()
+		control.openDoor()
+		return 'Handle Post'
+	if request.method == 'GET':
+		print('Handling post')
+		return 'Handle Get'
 
 @app.route('/getapp')
 def getapp_page():
@@ -71,7 +82,6 @@ def generateAudio():
         filepathtest = '/home/pi/sel373/server/teste.wav'
         global frames;
 
-
         while True:
             frames=[]
             print("1")
@@ -91,7 +101,6 @@ def generateAudio():
                             data = wav.read(CHUNK)
                     wav.close()
 
-
         stream.stop_stream()
         stream.close()
 
@@ -101,4 +110,6 @@ def audio_feed():
     return Response(generateAudio(), mimetype="audio/x-wav;codec=pcm")
 
 if __name__ == '__main__':
-        app.run(host='10.235.10.44', threaded=True,port=8082)
+#	app.run(host='192.168.0.103', threaded=True)
+	app.run(host='10.235.10.44', threaded=True,  port=8080)
+
