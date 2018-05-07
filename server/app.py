@@ -84,7 +84,6 @@ def generateAudio():
 
         while True:
             frames=[]
-            print("1")
             while len(frames)<15:
                 time.sleep(0.01)
             wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
