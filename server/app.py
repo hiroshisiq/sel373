@@ -13,6 +13,13 @@ app = Flask(__name__)
 def index():
         return render_template('index.html')
 
+
+
+@app.route('/recorder')
+def recorder_page():
+        return render_template('RecorderDemo.html')
+
+
 @app.route('/camera')
 def camera_page():
         return render_template('camera.html')
@@ -110,5 +117,5 @@ def audio_feed():
 
 if __name__ == '__main__':
 #	app.run(host='192.168.0.103', threaded=True)
-	app.run(host='10.235.10.44', threaded=True,  port=8080)
+	app.run(host='10.235.10.44', threaded=True,  port=8083)
 

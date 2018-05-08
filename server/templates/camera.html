@@ -5,6 +5,9 @@
 <meta charset="iso-8859-1">
 <link rel="stylesheet" href="/static/css/layout.css" type="text/css">
 <script src="/static/js/camera-buttons.js" type="text/javascript"></script>
+<script src="/static/js/jquery.js" type="text/javascript"></script>
+<script src="/static/js/RecorderDemo.js" type="text/javascript"></script>
+<script src="/static/js/WebAudioRecorder.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -54,13 +57,16 @@
       <input type="submit" onclick="return confirm('Are you sure?')" value="Open Door (pin 11)">
     </form>
 
-
-    <iframe name="record" style="display:none;" hidden="true"></iframe>
-    <form action="http://143.107.235.44:8083/speak_handler" method="post" target="record">
-      <input type="text" name="projectFilepath" hidden="true">
-      <input type="submit" onclick="return confirm('Are you sure?')" value="Abrir microfone">
-    </form>
-
+    <div class="form-group">
+      <label class="col-sm-3 control-label">Audio input</label>
+      <div class="col-sm-3">
+        <select id="audio-in-select" class="form-control"></select>
+      </div>
+      <div class="col-sm-3">
+        <input id="audio-in-level" type="range" min="0" max="100" value="0" class="hidden">
+      </div>
+    </div>
+  
 
     <!-- <form method="post">
         <input type="text" name="projectFilepath" hidden="true">
