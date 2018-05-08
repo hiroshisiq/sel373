@@ -8,7 +8,7 @@ function videoButtonClick() {
     // video.scr = "/static/img/000.jpg";
   } else {
     button.innerHTML = "Stop Video";
-    document.getElementById("videoimage").src = "http://highspeeddoggos.tk:8080/video_feed";
+    document.getElementById("videoimage").src = "http://highspeeddoggos.tk:8083/video_feed";
   }
 
   document.load();
