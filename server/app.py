@@ -114,4 +114,5 @@ def sw():
 
 if __name__ == '__main__':
 	# app.run(host='localhost', threaded=True, port=8080)
-	app.run(host='10.235.10.44', threaded=True,  port=8080)
+	# app.run(host='10.235.10.44', threaded=True,  port=8080, ssl_context='adhoc')
+    app.run(host='10.235.10.44', threaded=True,  port=8080, ssl_context='adhoc')
