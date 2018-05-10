@@ -26,6 +26,7 @@ function audioButtonClick() {
     audio.muted = true;
   }
 }
+
 function microButtonClick() {
   var button = document.getElementById("microButton");
 

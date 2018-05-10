@@ -5,7 +5,7 @@ import pyaudio
 import wave
 import time
 import numpy as np
-from gpio_control import GPIOControl
+# from gpio_control import GPIOControl
 
 app = Flask(__name__)
 
@@ -108,7 +108,10 @@ def generateAudio():
 def audio_feed():
     return Response(generateAudio(), mimetype="audio/x-wav;codec=pcm")
 
-if __name__ == '__main__':
-#	app.run(host='192.168.0.103', threaded=True)
-	app.run(host='10.235.10.44', threaded=True,  port=8080)
+@app.route('/service-worker.js')
+def sw():
+    return app.send_static_file('js/service-worker.js')
 
+if __name__ == '__main__':
+	# app.run(host='localhost', threaded=True, port=8080)
+	app.run(host='10.235.10.44', threaded=True,  port=8080)
