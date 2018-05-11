@@ -2,9 +2,10 @@ from pywebpush import webpush, WebPushException
 
 try:
     webpush(
-        subscription_info={"endpoint":"https://fcm.googleapis.com/fcm/send/e_x1jiLlCoM:APA91bENBX5ySQ_eTB6N--xUv8CbYgi4ZJcUo-9-A72h99yQTxvxmqSIF319lVIA2NYwLhSpRQzKEVyWSmiI02Hglpa0CR4Zmbpo8hzzPsZaQIdRCnCO7z77Q0WXEdzkWBEi7IRAR7hX","keys":{"p256dh":"BCJyLdht8oQeuPmd_7C_VnnoPgcmqip-Grnrr65I3bZxu73wLcR6hbz1ZfjHpv5I78opDlukXY7sXnmw_9hpUhs","auth":"j9fePyA7FWfetxu6TIcGEw"}},
+        subscription_info={"endpoint":"https://fcm.googleapis.com/fcm/send/eCtA_FJQbc4:APA91bFvLf7rTOqTQ6iypIVzMtEt84v5dXWCGA3y1Zkv0KtLs1XNVjlCYh4bgY9CwK-ZhoAUq1b84DypIFKfY5JNzCoHD159JNtpqXQ4sKlfiaqSYo_n05l_O371lqUT6fKMH4fOsq3w","keys":{"p256dh":"BKIZep6GHapeL6zQFPPg1h_KrBSGvDiHkl5T3pmnpKbKC1JV7H4ktKGRHN_NmTjKtk9TtEoHYcYIel-xckiTpD8","auth":"H8yu0wiEYKb3bRT0gZoaBw"}},
         data="Mary had a little lamb, with a nice mint jelly",
-        vapid_private_key="pushkeys/private.key")
+        vapid_private_key="dK60ppISZEvGacfe20FhUuYGhkt3tP5V5rDz1BhsclU",
+        vapid_claims={"sub": "mailto:anderson.hiroshi.siqueira@usp.br"})
 except WebPushException as ex:
     print("I'm sorry, Dave, but I can't do that: {}", repr(ex))
     # Mozilla returns additional information in the body of the response.
