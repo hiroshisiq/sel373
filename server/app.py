@@ -33,10 +33,28 @@ def appendSubscription(subscriptionJson):
     with open("json/data_file.json", "r") as read_file:
         subscriptionList = json.load(read_file)
 
-    subscriptionList.update(subscriptionJson)
+    # Open my json subscription list
+    with open("json/data_file.json", "r") as read_file:
+        subList = json.load(read_file)
+
+    print 'OLD SUB LIST'
+    for data in subList:
+        print data
+        print '=========================='
+
+    subscriptionList.append(subscriptionJson)
 
     with open("json/data_file.json", "w") as write_file:
         json.dump(subscriptionList, write_file)
+
+    # Open my json subscription list
+    with open("json/data_file.json", "r") as read_file:
+        subList = json.load(read_file)
+
+    print 'NEW SUB LIST'
+    for data in subList:
+            print data
+            print '=========================='
 
 @app.route('/subscription', methods=['POST'])
 def subscription():
