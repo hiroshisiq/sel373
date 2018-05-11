@@ -19,8 +19,6 @@ function urlB64ToUint8Array(base64String) {
 }
 
 if('PushManager' in window) {
-  // In case of Chrome
-  // if ('serviceWorker' in navigator) {
   if ('serviceWorker' in navigator) {
     console.log('Service Worker and Push is supported');
 
@@ -97,6 +95,17 @@ function unsubscribeUser() {
 
 function updateSubscriptionOnServer(subscription) {
   // TODO: Send subscription to application server
+  // construct an HTTP request
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://143.107.235.44:8080/subscription', true);
+  xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+  // send the collected data as JSON
+  xhr.send(JSON.stringify(subscription));
+
+  xhr.onloadend = function () {
+    // done
+  };
 
   console.log(JSON.stringify(subscription));
 }

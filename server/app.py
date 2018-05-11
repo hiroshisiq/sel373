@@ -6,6 +6,7 @@ import wave
 import time
 import numpy as np
 # from gpio_control import GPIOControl
+import json
 
 app = Flask(__name__)
 
@@ -28,6 +29,20 @@ def handler_page():
 		print('Handling post')
 		return 'Handle Get'
 
+def appendSubscription(subscriptionJson):
+    with open("json/data_file.json", "r") as read_file:
+        subscriptionList = json.load(read_file)
+
+    subscriptionList.update(subscriptionJson)
+
+    with open("json/data_file.json", "w") as write_file:
+        json.dump(subscriptionList, write_file)
+
+@app.route('/subscription', methods=['POST'])
+def subscription():
+    userSubscription = request.json
+    appendSubscription(userSubscription)
+
 @app.route('/getapp')
 def getapp_page():
         return render_template('getapp.html')
@@ -36,11 +51,9 @@ def getapp_page():
 def about_page():
         return render_template('about.html')
 
-
 @app.route('/micro')
 def micro_page():
         return render_template('micro.html')
-
 
 def genarateVideo(camera):
     """Video streaming generator function."""
