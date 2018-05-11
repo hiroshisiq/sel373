@@ -1,9 +1,15 @@
 from pywebpush import webpush, WebPushException
+import subscription_manager as subManager
 import json
 
+print('Cleaning duplicates before sending notifications')
+subManager.removeDuplicate()
+
+print('Opening JSON...')
 with open("json/data_file.json", "r") as read_file:
     data = json.load(read_file)
 
+print('Sending notifications...')
 for sub in data:
     try:
         webpush(
@@ -21,3 +27,5 @@ for sub in data:
                   extra.errno,
                   extra.message
                   )
+
+print('Done!')

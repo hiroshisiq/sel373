@@ -10,15 +10,11 @@ self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
-  const title = 'PUSH TEST';
+  const title = 'TeleScope';
   const options = {
-    body: 'This is a test message',
+    body: 'There is somebody at your door, click here to see!',
     icon: 'img/icon.png',
-    vibrate: [200, 100, 200, 100, 200, 100, 400],
-    actions: [
-      { action: 'yes', 'title': 'Yes'},
-      { action: 'no', 'title': 'No'}
-    ]
+    vibrate: [200, 100, 200, 100, 200, 100, 400]
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
@@ -30,6 +26,6 @@ self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('https://developers.google.com/web/')
+    clients.openWindow('https://highspeeddoggos.tk:8080/camera')
   );
 });
