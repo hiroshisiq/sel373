@@ -7,6 +7,7 @@ import time
 import numpy as np
 # from gpio_control import GPIOControl
 import json
+import subscription_manager as subManager
 
 app = Flask(__name__)
 
@@ -29,37 +30,15 @@ def handler_page():
 		print('Handling post')
 		return 'Handle Get'
 
-def appendSubscription(subscriptionJson):
-    with open("json/data_file.json", "r") as read_file:
-        subscriptionList = json.load(read_file)
-
-    # Open my json subscription list
-    with open("json/data_file.json", "r") as read_file:
-        subList = json.load(read_file)
-
-    print 'OLD SUB LIST'
-    for data in subList:
-        print data
-        print '=========================='
-
-    subscriptionList.append(subscriptionJson)
-
-    with open("json/data_file.json", "w") as write_file:
-        json.dump(subscriptionList, write_file)
-
-    # Open my json subscription list
-    with open("json/data_file.json", "r") as read_file:
-        subList = json.load(read_file)
-
-    print 'NEW SUB LIST'
-    for data in subList:
-            print data
-            print '=========================='
-
 @app.route('/subscription', methods=['POST'])
 def subscription():
     userSubscription = request.json
-    appendSubscription(userSubscription)
+    subManager.appendSubscription(userSubscription)
+    return 'ok'
+
+@app.route('/duplicate')
+def duplicate():
+    subManager.removeDuplicate()
     return 'ok'
 
 @app.route('/getapp')
