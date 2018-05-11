@@ -1,4 +1,4 @@
-const applicationServerPublicKey = 'BGYeyH8zrqB6Egoua8Z51YebeG4mkWeymIKIkRYexFxH1-5aDk4sHycALNCGUPplqfXwi42BhEVUrEt9l-TuDFI';
+const applicationServerPublicKey = 'BOJx5SrIq_6563OOrkaIVfsRpn-jtDnUwKEdMCJG23aKwCWFz-AL5qHEeotueAOHYxCFpg8xFrHiU9zxaPkdVRM';
 
 let isSubscribed = false;
 let swRegistration = null;
