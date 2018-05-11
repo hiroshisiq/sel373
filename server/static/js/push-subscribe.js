@@ -97,7 +97,7 @@ function updateSubscriptionOnServer(subscription) {
   // TODO: Send subscription to application server
   // construct an HTTP request
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://143.107.235.44:8080/subscription', true);
+  xhr.open('POST', '/subscription', true);
   xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
   // send the collected data as JSON

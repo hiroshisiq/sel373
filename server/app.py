@@ -42,6 +42,7 @@ def appendSubscription(subscriptionJson):
 def subscription():
     userSubscription = request.json
     appendSubscription(userSubscription)
+    return 'ok'
 
 @app.route('/getapp')
 def getapp_page():
