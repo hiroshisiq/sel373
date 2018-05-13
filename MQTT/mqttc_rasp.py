@@ -9,30 +9,35 @@ import paho.mqtt.client as mqtt
 import RPi.GPIO as GPIO
 import time
 
-BOTAO    =   11
-PORTAO  =   12
+BOTAO    =   12
+PORTAO  =   11
 flag = True
 
 temp={}
-execfile('clean.py',temp)
+#execfile('clean.py',temp)
 
 def on_connect(client, userdata, flags,rc):
-    
+    print("Conectado")
 #    print("Connect " + str(rc))
     client.subscribe("TeleScope") 
 
 def on_message(client, userdata, msg):
-#    print "Topic : ", msg.topic
+    print("Topic : " , msg.payload)
     if(msg.payload=="BOTAO"):
+        print("Button high")
+
         GPIO.output(BOTAO,GPIO.HIGH)
         time.sleep(2)
         GPIO.output(BOTAO,GPIO.LOW)
-	print 'Button press'
-	flag = False
-    if(msg.payload=="PORTAO"):
+        print("Button low")
+        flag = False
+    if(msg.payload==b"PORTAO"):
+        print("Portao high")
         GPIO.output(PORTAO,GPIO.HIGH)
         time.sleep(2)
         GPIO.output(PORTAO,GPIO.LOW)
+        print("Portao low")
+
 #    f = open('image.bmp', 'w+')
 #    f.write(msg.payload)
 #    f.close()
@@ -40,7 +45,7 @@ def on_message(client, userdata, msg):
 
 GPIO.setmode(GPIO.BOARD)
 #GPIO.setwarnings(False)
-GPIO.setup(BOTAO, GPIO.OUT)
+GPIO.setup(PORTAO, GPIO.OUT)
 
 client = mqtt.Client()
 client.on_connect = on_connect
@@ -48,7 +53,6 @@ client.on_message = on_message
 
 
 client.connect("143.107.235.44", 1883, 60)
-
 
 
 
