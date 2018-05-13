@@ -5,7 +5,7 @@ import pyaudio
 import wave
 import time
 import numpy as np
-# from gpio_control import GPIOControl
+from gpio_control import GPIOControl
 import json
 import subscription_manager as subManager
 
