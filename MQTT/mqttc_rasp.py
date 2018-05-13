@@ -15,16 +15,6 @@ PORTAO  =   11
 flag = True
 
 temp={}
-#execfile('clean.py',temp)
-
-def on_connect(client, userdata, flags,rc):
-    print("Conectado")
-
-BOTAO  = 11
-PORTAO = 12
-flag   = True
-
-temp={}
 exec(open("./clean.py").read())
 
 def on_connect(client, userdata, flags,rc):
