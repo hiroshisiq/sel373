@@ -35,7 +35,7 @@
 
   $timeDisplay = $('#time-display');
 
-  $record = $('#microButton');
+  $record = $('#record');
 
   $cancel = $('#cancel');
 
@@ -113,7 +113,7 @@
   mixer.connect(audioContext.destination);
 
   audioRecorder = new WebAudioRecorder(mixer, {
-    workerDir: '/static/js/',
+    workerDir: '',
     onEncoderLoading: function(recorder, encoding) {
       $modalLoading.find('.modal-title').html("Loading " + (encoding.toUpperCase()) + " encoder ...");
       $modalLoading.modal('show');

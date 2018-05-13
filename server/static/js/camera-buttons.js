@@ -34,6 +34,11 @@ function microButtonClick() {
   } else {
     button.innerHTML = "Start Microphone";
   }
+  if (audioRecorder.isRecording()) {
+    stopRecording(true);
+  } else {
+    startRecording();
+  }
 }
 
 //============================= Audio =============================//

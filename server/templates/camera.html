@@ -48,6 +48,8 @@
       <button type="button" id="videoButton" onclick="videoButtonClick()">Stop Video</button>
       <button type="button" id="audioButton" onclick="audioButtonClick()">Stop Audio</button>
       <button type="button" id="microButton" onclick="microButtonClick()">Start Microphone</button>
+      <button id="record" class="btn btn-danger">RECORD</button>      
+      <button id="cancel" class="btn btn-default hidden">CANCEL</button>
     </div>
 
 
@@ -65,9 +67,10 @@
       <div class="col-sm-3">
         <input id="audio-in-level" type="range" min="0" max="100" value="0" class="hidden">
       </div>
-    </div>
-  
+    </div>  
 
+      <h3>Recordings</h3>
+      <div id="recording-list"></div>
     <!-- <form method="post">
         <input type="text" name="projectFilepath" hidden="true">
         <input type="submit" value="Open Door (pin 11)">
