@@ -9,12 +9,12 @@ import paho.mqtt.client as mqtt
 import RPi.GPIO as GPIO
 import time
 
-BOTAO    =   11
-PORTAO  =   12
-flag = True
+BOTAO  = 11
+PORTAO = 12
+flag   = True
 
 temp={}
-execfile('clean.py',temp)
+exec(open("./clean.py").read())
 
 def on_connect(client, userdata, flags,rc):
 
@@ -25,7 +25,7 @@ def on_message(client, userdata, msg):
 #    print "Topic : ", msg.topic
     if(msg.payload=="BOTAO"):
         print 'Button press'
-        execfile('../server/server-push.py',temp)
+        exec(open("./../server/server-push.py").read())
         flag = False
     if(msg.payload=="PORTAO"):
         GPIO.output(PORTAO,GPIO.HIGH)
@@ -44,13 +44,8 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-
 client.connect("143.107.235.44", 1883, 60)
 
-
-
-
 client.loop_forever()
-
 
 GPIO.cleanup()           # clean up GPIO on normal exit
