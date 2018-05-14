@@ -33,14 +33,14 @@
     <!-- content body -->
     <section id="slider">
       <div id="videofeed">
-          <img id="videoimage" src="https://highspeeddoggos.tk:8080/video_feed" alt="Camera"/>
+          <img id="videoimage" src="https://highspeeddoggos.tk:8083/video_feed" alt="Camera"/>
       </div>
     </section>
 
    <!-- <audio id="audiofeed" src="{{ url_for('audio_feed') }}" loop></audio>-->
 
     <audio id="audiofeed" autoplay>
-      <source src="https://highspeeddoggos.tk:8080/audio_feed"/>
+      <source src="https://highspeeddoggos.tk:8083/audio_feed"/>
     </audio>
 
     <div id="container">
@@ -55,6 +55,23 @@
       <input type="text" name="projectFilepath" hidden="true">
       <input type="submit" onclick="return confirm('Are you sure?')" value="Open Door (pin 11)">
     </form>
+
+    <iframe name="javou" style="display:none;" hidden="true"></iframe>
+    <form action="https://highspeeddoggos.tk:8083/javou" method="post" target="javou">
+      <input type="text" name="sound1Filepath" hidden="true">
+      <input type="submit" onclick="return confirm('Are you sure?')" value="Já estou indo">
+    </form>
+    <iframe name="naoestou" style="display:none;" hidden="true"></iframe>
+    <form action="https://highspeeddoggos.tk:8083/naoestou" method="post" target="naoestou">
+      <input type="text" name="sound2Filepath" hidden="true">
+      <input type="submit" onclick="return confirm('Are you sure?')" value="Não estou em casa">
+    </form>
+    <iframe name="vaembora" style="display:none;" hidden="true"></iframe>
+    <form action="https://highspeeddoggos.tk:8083/vaembora" method="post" target="vaembora">
+      <input type="text" name="sound3Filepath" hidden="true">
+      <input type="submit" onclick="return confirm('Are you sure?')" value="Vá embora daqui">
+    </form>
+
 
     <!-- <form method="post">
         <input type="text" name="projectFilepath" hidden="true">

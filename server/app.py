@@ -4,6 +4,7 @@ from camera_opencv import Camera
 import pyaudio
 import wave
 import time
+import subprocess
 import numpy as np
 # from gpio_control import GPIOControl
 import json
@@ -11,9 +12,36 @@ import subscription_manager as subManager
 
 app = Flask(__name__)
 
+@app.route('/play')
+def play_page():
+        exec(open("play.py").read())
+        time.sleep(4)
+        return render_template('index.html')
+
+
 @app.route('/')
 def index():
+        exec(open("play.py").read())
         return render_template('index.html')
+
+@app.route('/naoestou', methods = ['GET', 'POST'])
+def sound_page1():
+        if request.method == 'POST':
+            print("Playing audio")
+            exec(open("naoestou.py").read())
+
+@app.route('/javou', methods = ['GET', 'POST'])
+def sound_page2():
+        if request.method == 'POST':
+            print("Playing audio")
+            exec(open("javou.py").read())
+
+@app.route('/vaembora', methods = ['GET', 'POST'])
+def sound_page3():
+        if request.method == 'POST':
+            print("Playing audio")
+            exec(open("vaembora.py").read())
+
 
 @app.route('/camera')
 def camera_page():
@@ -125,5 +153,5 @@ def sw():
 
 if __name__ == '__main__':
 	# app.run(host='localhost', threaded=True, port=8080, ssl_context='adhoc')
-	app.run(host='10.235.10.44', threaded=True,  port=8080, ssl_context=('ssl/certificate.crt', 'ssl/private.key'))
+	app.run(host='10.235.10.44', threaded=True,  port=8083, ssl_context=('ssl/certificate.crt', 'ssl/private.key'))
     # app.run(host='10.235.10.44', threaded=True,  port=8080, ssl_context='adhoc')
