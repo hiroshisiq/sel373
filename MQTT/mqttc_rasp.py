@@ -17,18 +17,16 @@ temp={}
 execfile('clean.py',temp)
 
 def on_connect(client, userdata, flags,rc):
-    
+
 #    print("Connect " + str(rc))
-    client.subscribe("TeleScope") 
+    client.subscribe("TeleScope")
 
 def on_message(client, userdata, msg):
 #    print "Topic : ", msg.topic
     if(msg.payload=="BOTAO"):
-        GPIO.output(BOTAO,GPIO.HIGH)
-        time.sleep(2)
-        GPIO.output(BOTAO,GPIO.LOW)
-	print 'Button press'
-	flag = False
+        print 'Button press'
+        execfile('../server/server-push.py',temp)
+        flag = False
     if(msg.payload=="PORTAO"):
         GPIO.output(PORTAO,GPIO.HIGH)
         time.sleep(2)
@@ -55,4 +53,4 @@ client.connect("143.107.235.44", 1883, 60)
 client.loop_forever()
 
 
-GPIO.cleanup()           # clean up GPIO on normal exit 
+GPIO.cleanup()           # clean up GPIO on normal exit
