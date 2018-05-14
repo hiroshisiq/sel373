@@ -9,13 +9,12 @@ import paho.mqtt.client as mqtt
 import RPi.GPIO as GPIO
 import time
 
-BOTAO = 13
+BOTAO = 12
 
 def on_publish(mosq, userdata, mid):
     mosq.disconnect()
 
 client = mqtt.Client()
-client.connect("143.107.235.44", 1883, 60)
 client.on_publish = on_publish
 GPIO.setmode(GPIO.BOARD)
 #GPIO.setwarnings(False)
@@ -23,11 +22,10 @@ GPIO.setup(BOTAO, GPIO.IN)
 
 while True:
     if(GPIO.input(BOTAO)):
+        client.connect("143.107.235.44", 1883, 60)
         client.publish("TeleScope","BOTAO")
-        time.sleep(1)    
-    
-    
-    
+        time.sleep(1)
+
 #im=open("nova.bmp", "rb") #3.7kiB in same folder
 #fileContent = im.read()
 #byteArr = bytearray(fileContent)

@@ -6,12 +6,13 @@ Created on Wed Mar 14 20:38:44 2018
 """
 
 import paho.mqtt.client as mqtt
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 import time
+import subprocess
 
-BOTAO  = 11
-PORTAO = 12
-flag   = True
+#BOTAO  = 12
+#PORTAO = 11
+#flag   = True
 
 temp={}
 exec(open("./clean.py").read())
@@ -23,22 +24,23 @@ def on_connect(client, userdata, flags,rc):
 
 def on_message(client, userdata, msg):
 #    print "Topic : ", msg.topic
-    if(msg.payload=="BOTAO"):
-        print 'Button press'
-        exec(open("./../server/server-push.py").read())
-        flag = False
-    if(msg.payload=="PORTAO"):
-        GPIO.output(PORTAO,GPIO.HIGH)
-        time.sleep(2)
-        GPIO.output(PORTAO,GPIO.LOW)
+    if(msg.payload==b"BOTAO"):
+        print('Button press')
+        subprocess.run(["sh","push.sh"])
+#        exec(open("../server/server-push.py").read())
+#        flag = False
+#    if(msg.payload==b"PORTAO"):
+#        GPIO.output(PORTAO,GPIO.HIGH)
+#        time.sleep(2)
+#        GPIO.output(PORTAO,GPIO.LOW)
 #    f = open('image.bmp', 'w+')
 #    f.write(msg.payload)
 #    f.close()
 
 
-GPIO.setmode(GPIO.BOARD)
+#GPIO.setmode(GPIO.BOARD)
 #GPIO.setwarnings(False)
-GPIO.setup(BOTAO, GPIO.OUT)
+#GPIO.setup(BOTAO, GPIO.OUT)
 
 client = mqtt.Client()
 client.on_connect = on_connect
