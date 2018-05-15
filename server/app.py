@@ -39,6 +39,11 @@ def handler_page():
 def getapp_page():
         return render_template('getapp.html')
 
+@app.route('/microfone')
+def microfone_page():
+        return render_template('microfone.html')
+
+
 @app.route('/about')
 def about_page():
         return render_template('about.html')
