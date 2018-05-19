@@ -6,13 +6,14 @@ Created on Wed Mar 14 20:38:44 2018
 """
 
 import paho.mqtt.client as mqtt
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 import time
+import subprocess
 
+#BOTAO  = 12
+#PORTAO = 11
+#flag   = True
 
-BOTAO    =   12
-PORTAO  =   11
-flag = True
 
 temp={}
 exec(open("./clean.py").read())
@@ -22,39 +23,30 @@ def on_connect(client, userdata, flags,rc):
     client.subscribe("TeleScope")
 
 def on_message(client, userdata, msg):
-    print("Topic : " , msg.payload)
+#    print "Topic : ", msg.topic
     if(msg.payload==b"BOTAO"):
-
-        print("Button high")
-
-        GPIO.output(BOTAO,GPIO.HIGH)
-        time.sleep(2)
-        GPIO.output(BOTAO,GPIO.LOW)
-        print("Button low")
-    if(msg.payload==b"PORTAO"):
-        print("Portao high")
-        GPIO.output(PORTAO,GPIO.HIGH)
-        time.sleep(2)
-        GPIO.output(PORTAO,GPIO.LOW)
-        print("Portao low")
-
+        print('Button press')
+        subprocess.run(["sh","push.sh"])
+#        exec(open("../server/server-push.py").read())
+#        flag = False
+#    if(msg.payload==b"PORTAO"):
+#        GPIO.output(PORTAO,GPIO.HIGH)
+#        time.sleep(2)
+#        GPIO.output(PORTAO,GPIO.LOW)
 #    f = open('image.bmp', 'w+')
 #    f.write(msg.payload)
 #    f.close()
 
 
-GPIO.setmode(GPIO.BOARD)
+#GPIO.setmode(GPIO.BOARD)
 #GPIO.setwarnings(False)
-GPIO.setup(PORTAO, GPIO.OUT)
+#GPIO.setup(BOTAO, GPIO.OUT)
 
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
 client.connect("143.107.235.44", 1883, 60)
-
-
-
 
 client.loop_forever()
 
