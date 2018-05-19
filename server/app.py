@@ -36,15 +36,16 @@ def handler_page():
 
 @app.route('/subscription', methods=['POST'])
 def subscription():
+    request.get_data()
     userSubscription = request.json
     subManager.appendSubscription(userSubscription)
     return 'ok'
 
 @app.route('/saveaudio', methods=['POST'])
 def saveaudio():
-    audio = request.file
-    print(audio)
-    audio.save('./myaudio.wav')
+    audio = request
+    audio.get_data()
+    audio = audio.data
     return 'ok'
 
 @app.route('/duplicate')

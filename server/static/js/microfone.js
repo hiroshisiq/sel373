@@ -31,7 +31,7 @@ function saveAudio(AudioBLOB){
   xhr.open('POST', '/saveaudio', true);
   xhr.setRequestHeader('Content-Type', 'multipart/form-data');
 
-  if(AudioBlob != null) {
+  if(AudioBLOB != null) {
     xhr.send(AudioBLOB);
     console.log("Post sent from saveAudio");
   }
@@ -167,7 +167,7 @@ window.onload = function(){
             //
             // // In this case we are going to add an Audio item to the list so you
             // // can play every stored Audio
-            // var url = URL.createObjectURL(AudioBLOB);
+            var url = URL.createObjectURL(AudioBLOB);
             // var li = document.createElement('li');
             // var au = document.createElement('audio');
             // var hf = document.createElement('a');
@@ -186,6 +186,9 @@ window.onload = function(){
             // recordingslist.appendChild(li);
             //
             console.log("Audio sent");
+            console.log(AudioBLOB);
+            saveAudio(AudioBLOB);
+           // saveAudio(url)
 
 
         }, _AudioFormat);
