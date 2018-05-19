@@ -40,6 +40,13 @@ def subscription():
     subManager.appendSubscription(userSubscription)
     return 'ok'
 
+@app.route('/saveaudio', methods=['POST'])
+def saveaudio():
+    audio = request.file
+    print(audio)
+    audio.save('./myaudio.wav')
+    return 'ok'
+
 @app.route('/duplicate')
 def duplicate():
     subManager.removeDuplicate()

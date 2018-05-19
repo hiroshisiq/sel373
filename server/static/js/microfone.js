@@ -11,21 +11,34 @@ var audio_stream;
 
 function saveAudio(AudioBLOB){
   //[TODO] Send and save AudioBLOB to server
-  var req = null;
-  var url = "savefile.php";
+  // var req = null;
+  // var url = "savefile.php";
   //var data = URL.createObjectURL(AudioBLOB);//document.getElementById("save").href.toString();// document.getElementById("save").innerHTML;// = xhttp.responseText;;   // you have to check how to get the data from your saveAudio() method
   window.alert(AudioBLOB);
   //console.log(data);
-  (window.XMLHttpRequest) ? req = new XMLHttpRequest() : (window.ActiveXObject) ? req = new ActiveXObject("Microsoft.XMLHTTP") : req = false;
-  req.open("POST", url, true);
-  req.setRequestHeader("Content-Type", "multipart/form-data");
+  // (window.XMLHttpRequest) ? req = new XMLHttpRequest() : (window.ActiveXObject) ? req = new ActiveXObject("Microsoft.XMLHTTP") : req = false;
+  // req.open("POST", url, true);
+  // req.setRequestHeader("Content-Type", "multipart/form-data");
+  //
+  // if(AudioBLOB != null) //&& data != "")
+  // {
+  //   //req.setRequestHeader("Content-length", data.length);
+  //   req.send(AudioBLOB);
+  //   console.log("Post sent from saveAudio");
+  // }
 
-  if(AudioBLOB != null) //&& data != "")
-  {
-    //req.setRequestHeader("Content-length", data.length);
-    req.send(AudioBLOB);
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', '/saveaudio', true);
+  xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+
+  if(AudioBlob != null) {
+    xhr.send(AudioBLOB);
     console.log("Post sent from saveAudio");
   }
+
+  xhr.onloadend = function () {
+    // done
+  };
 }
 
 function Initialize() {
@@ -178,4 +191,3 @@ window.onload = function(){
         }, _AudioFormat);
     }, false);
 };
-

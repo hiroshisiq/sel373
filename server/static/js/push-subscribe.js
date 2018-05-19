@@ -97,7 +97,6 @@ function unsubscribeUser() {
 }
 
 function updateSubscriptionOnServer(subscription) {
-  // TODO: Send subscription to application server
   // construct an HTTP request
   var xhr = new XMLHttpRequest();
   xhr.open('POST', '/subscription', true);
