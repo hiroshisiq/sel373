@@ -14,11 +14,11 @@ import subprocess
 #PORTAO = 11
 #flag   = True
 
+
 temp={}
 exec(open("./clean.py").read())
 
 def on_connect(client, userdata, flags,rc):
-
 #    print("Connect " + str(rc))
     client.subscribe("TeleScope")
 

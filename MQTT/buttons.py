@@ -19,6 +19,7 @@ def portao_callback(channel):
         client.publish("TeleScope","PORTAO")
 
 def button_callback(channel):
+        print("Button sent")
         client.publish("TeleScope","BOTAO")
 
 client = mqtt.Client()
@@ -26,7 +27,7 @@ client.connect("143.107.235.44", 1883, 60)
 client.on_publish = on_publish
 GPIO.setmode(GPIO.BOARD)
 #GPIO.setwarnings(False)
-GPIO.setup(CHAVE, GPIO.IN, pull_up_down=RPIO.PUD_DOWN)
+GPIO.setup(CHAVE, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 time.sleep(1)
 #GPIO.add_event_detect(OTHER, GPIO.FALLING, callback=other_callback, bouncetime=300)
