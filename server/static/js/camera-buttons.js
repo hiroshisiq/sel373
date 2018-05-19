@@ -8,7 +8,7 @@ function videoButtonClick() {
     // video.scr = "/static/img/000.jpg";
   } else {
     button.innerHTML = "Stop Video";
-    document.getElementById("videoimage").src = "http://highspeeddoggos.tk:8083/video_feed";
+    document.getElementById("videoimage").src = "https://highspeeddoggos.tk:8080/video_feed";
   }
 
   document.load();
@@ -26,6 +26,7 @@ function audioButtonClick() {
     audio.muted = true;
   }
 }
+
 function microButtonClick() {
   var button = document.getElementById("microButton");
 

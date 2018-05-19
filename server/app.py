@@ -6,6 +6,8 @@ import wave
 import time
 import numpy as np
 from gpio_control import GPIOControl
+import json
+import subscription_manager as subManager
 
 app = Flask(__name__)
 
@@ -13,12 +15,9 @@ app = Flask(__name__)
 def index():
         return render_template('index.html')
 
-
-
 @app.route('/recorder')
 def recorder_page():
         return render_template('RecorderDemo.html')
-
 
 @app.route('/camera')
 def camera_page():
@@ -35,6 +34,17 @@ def handler_page():
 		print('Handling post')
 		return 'Handle Get'
 
+@app.route('/subscription', methods=['POST'])
+def subscription():
+    userSubscription = request.json
+    subManager.appendSubscription(userSubscription)
+    return 'ok'
+
+@app.route('/duplicate')
+def duplicate():
+    subManager.removeDuplicate()
+    return 'ok'
+
 @app.route('/getapp')
 def getapp_page():
         return render_template('getapp.html')
@@ -43,16 +53,13 @@ def getapp_page():
 def microfone_page():
         return render_template('microfone.html')
 
-
 @app.route('/about')
 def about_page():
         return render_template('about.html')
 
-
 @app.route('/micro')
 def micro_page():
         return render_template('micro.html')
-
 
 def genarateVideo(camera):
     """Video streaming generator function."""
@@ -120,7 +127,11 @@ def generateAudio():
 def audio_feed():
     return Response(generateAudio(), mimetype="audio/x-wav;codec=pcm")
 
-if __name__ == '__main__':
-#	app.run(host='192.168.0.103', threaded=True)
-	app.run(host='10.235.10.44', threaded=True,  port=8083)
+@app.route('/service-worker.js')
+def sw():
+    return app.send_static_file('js/service-worker.js')
 
+if __name__ == '__main__':
+    # app.run(host='localhost', threaded=True, port=8080, ssl_context='adhoc')
+    app.run(host='10.235.10.44', threaded=True,  port=8080, ssl_context=('ssl/certificate.crt', 'ssl/private.key'))
+    # app.run(host='10.235.10.44', threaded=True,  port=8080, ssl_context='adhoc')
