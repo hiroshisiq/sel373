@@ -150,7 +150,22 @@ window.onload = function(){
 
     // Handle on start recording button
     document.getElementById("startMicro").addEventListener("click", function(){
-	startRecording();
+     //   startRecording();
+        var button = document.getElementById("startMicro");
+        if(button.innerHTML== "Start Microphone"){
+	    startRecording();
+            button.innerHTML= "Stop Microphone";
+	}else{
+            var _AudioFormat = "audio/wav";
+
+            stopRecording(function(AudioBLOB){
+                var url = URL.createObjectURL(AudioBLOB);
+
+                console.log("Audio sent");
+            }, _AudioFormat);
+            button.innerHTML = "Start Microphone";
+        }
+
     }, false);
 
     // Handle on stop recording button
@@ -161,36 +176,8 @@ window.onload = function(){
         //var AudioFormat = "audio/mpeg";
 
         stopRecording(function(AudioBLOB){
-            // // Note:
-            // // Use the AudioBLOB for whatever you need, to download
-            // // directly in the browser, to upload to the server, you name it !
-            //
-            // // In this case we are going to add an Audio item to the list so you
-            // // can play every stored Audio
             var url = URL.createObjectURL(AudioBLOB);
-            // var li = document.createElement('li');
-            // var au = document.createElement('audio');
-            // var hf = document.createElement('a');
-            //
-            // au.controls = true;
-            // au.src = url;
-            // hf.href = url;
-            // // Important:
-            // // Change the format of the file according to the mimetype
-            // // e.g for audio/wav the extension is .wav
-            // //     for audio/mpeg (mp3) the extension is .mp3
-            // hf.download = new Date().toISOString() + '.wav';
-            // hf.innerHTML = hf.download;
-            // li.appendChild(au);
-            // li.appendChild(hf);
-            // recordingslist.appendChild(li);
-            //
             console.log("Audio sent");
-//            console.log(AudioBLOB);
-//            saveAudio(AudioBLOB);
-           // saveAudio(url)
-
-
         }, _AudioFormat);
     }, false);
 };
