@@ -46,14 +46,14 @@ def subscription():
 def saveaudio():
     audio = request
     audio.get_data()
-    global record
     record = audio.data
     wf = wave.open('/home/pi/sel373/server/out.wav', 'wb')
-    wf.setnchannels(CHANNELS)
+    wf.setnchannels(1)
     wf.setsampwidth(4) #p1.get_sample_size(FORMAT))
-    wf.setframerate(RATE)
+    wf.setframerate(44100)
     wf.writeframes(record)
     wf.close()
+    #time.sleep(0.1)
     subprocess.run(["play","out.wav"])
 
     return 'ok'
