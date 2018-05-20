@@ -3,6 +3,7 @@ from flask import Flask, render_template, Response, request
 from camera_opencv import Camera
 import pyaudio
 import wave
+import subprocess
 import time
 import numpy as np
 from gpio_control import GPIOControl
@@ -45,7 +46,16 @@ def subscription():
 def saveaudio():
     audio = request
     audio.get_data()
-    audio = audio.data
+    global record
+    record = audio.data
+    wf = wave.open('/home/pi/sel373/server/out.wav', 'wb')
+    wf.setnchannels(CHANNELS)
+    wf.setsampwidth(4) #p1.get_sample_size(FORMAT))
+    wf.setframerate(RATE)
+    wf.writeframes(record)
+    wf.close()
+    subprocess.run(["play","out.wav"])
+
     return 'ok'
 
 @app.route('/duplicate')

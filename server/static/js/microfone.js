@@ -14,7 +14,7 @@ function saveAudio(AudioBLOB){
   // var req = null;
   // var url = "savefile.php";
   //var data = URL.createObjectURL(AudioBLOB);//document.getElementById("save").href.toString();// document.getElementById("save").innerHTML;// = xhttp.responseText;;   // you have to check how to get the data from your saveAudio() method
-  window.alert(AudioBLOB);
+  //window.alert(AudioBlob);
   //console.log(data);
   // (window.XMLHttpRequest) ? req = new XMLHttpRequest() : (window.ActiveXObject) ? req = new ActiveXObject("Microsoft.XMLHTTP") : req = false;
   // req.open("POST", url, true);
@@ -150,7 +150,7 @@ window.onload = function(){
 
     // Handle on start recording button
     document.getElementById("startMicro").addEventListener("click", function(){
-        startRecording();
+	startRecording();
     }, false);
 
     // Handle on stop recording button
@@ -186,8 +186,8 @@ window.onload = function(){
             // recordingslist.appendChild(li);
             //
             console.log("Audio sent");
-            console.log(AudioBLOB);
-            saveAudio(AudioBLOB);
+//            console.log(AudioBLOB);
+//            saveAudio(AudioBLOB);
            // saveAudio(url)
 
 
