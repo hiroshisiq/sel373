@@ -150,21 +150,21 @@ window.onload = function(){
 
     // Handle on start recording button
     document.getElementById("startMicro").addEventListener("click", function(){
-     //   startRecording();
-        var button = document.getElementById("startMicro");
-        if(button.innerHTML== "Start Microphone"){
-	    startRecording();
-            button.innerHTML= "Stop Microphone";
-	}else{
-            var _AudioFormat = "audio/wav";
-
-            stopRecording(function(AudioBLOB){
-                var url = URL.createObjectURL(AudioBLOB);
-
-                console.log("Audio sent");
-            }, _AudioFormat);
-            button.innerHTML = "Start Microphone";
-        }
+        startRecording();
+//       var button = document.getElementById("startMicro");
+//       if(button.innerHTML== "Start Microphone"){
+//	    startRecording();
+//            button.innerHTML= "Stop Microphone";
+//	}else{
+//            var _AudioFormat = "audio/wav";
+//
+//            stopRecording(function(AudioBLOB){
+//                var url = URL.createObjectURL(AudioBLOB);
+//
+//                console.log("Audio sent");
+//            }, _AudioFormat);
+//            button.innerHTML = "Start Microphone";
+//        }
 
     }, false);
 

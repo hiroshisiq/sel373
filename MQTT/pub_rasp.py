@@ -24,7 +24,7 @@ while True:
     if(GPIO.input(BOTAO)):
         client.connect("143.107.235.44", 1883, 60)
         client.publish("TeleScope","BOTAO")
-        time.sleep(1)
+    time.sleep(0.1)
 
 #im=open("nova.bmp", "rb") #3.7kiB in same folder
 #fileContent = im.read()
@@ -33,4 +33,4 @@ while True:
 #
 #client.publish("image","Hello",0)
 
-client.loop_forever()
+#client.loop_forever()
