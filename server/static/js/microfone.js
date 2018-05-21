@@ -33,7 +33,9 @@ function saveAudio(AudioBLOB){
 
   if(AudioBLOB != null) {
     xhr.send(AudioBLOB);
+    window.alert("Message sent");
     console.log("Post sent from saveAudio");
+
   }
 
   xhr.onloadend = function () {
