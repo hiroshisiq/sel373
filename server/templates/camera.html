@@ -35,6 +35,13 @@
 <div class="wrapper row2">
   <div id="container" class="clear">
     <!-- content body -->
+
+    <section id="slider">
+      <audio id="audiofeed" autoplay src="https://highspeeddoggos.tk:8080/audio_feed"/>
+      </audio>
+    </section>
+
+
     <section id="slider">
       <div id="videofeed">
           <img id="videoimage" src="https://highspeeddoggos.tk:8080/video_feed" alt="Camera"/>
@@ -43,9 +50,10 @@
 
     <!--audio id="audiofeed" src="{{ url_for('audio_feed') }}" loop></audio-->
 
-    <audio id="audiofeed" autoplay>
+    <!--audio id="audiofeed" autoplay>
       <source src="https://highspeeddoggos.tk:8080/audio_feed"/>
-    </audio>
+    </audio-->
+
 
     <div id="container">
       <button type="button" id="videoButton" onclick="videoButtonClick()">Stop Video</button>

@@ -1,0 +1,672 @@
+ * Running on https://10.235.10.44:8080/ (Press CTRL+C to quit)
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.front.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM front
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround21
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround21
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround40.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround40
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround41
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround50
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround51
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround71.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround71
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM iec958
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM spdif
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM spdif
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.hdmi
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.hdmi
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.modem
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.modem
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.phoneline
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.phoneline
+143.107.182.231 - - [21/May/2018 17:40:25] "POST /subscription HTTP/1.1" 200 -
+connect(2) call to /tmp/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+143.107.182.231 - - [21/May/2018 17:40:26] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 17:40:26] "GET /video_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 17:40:27] "GET /audio_feed HTTP/1.1" 200 -
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 770k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:04.37  
+
+In:0.00% 00:00:00.00 [00:00:04.37] Out:0     [      |      ]        Clip:0    In:21.3% 00:00:00.93 [00:00:03.44] Out:41.0k [======|======] Hd:2.3 Clip:0    In:25.5% 00:00:01.11 [00:00:03.25] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:29.8% 00:00:01.30 [00:00:03.07] Out:57.3k [ -====|====- ] Hd:2.3 Clip:0    In:34.0% 00:00:01.49 [00:00:02.88] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:38.3% 00:00:01.67 [00:00:02.69] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:42.6% 00:00:01.86 [00:00:02.51] Out:81.9k [======|======] Hd:1.9 Clip:0    In:46.8% 00:00:02.04 [00:00:02.32] Out:90.1k [======|======] Hd:1.9 Clip:0    In:51.1% 00:00:02.23 [00:00:02.14] Out:98.3k [======|======] Hd:1.9 Clip:0    In:55.3% 00:00:02.41 [00:00:01.95] Out:106k  [   -==|==-   ] Hd:1.9 Clip:0    In:59.6% 00:00:02.60 [00:00:01.76] Out:115k  [      |      ] Hd:1.9 Clip:0    In:63.8% 00:00:02.79 [00:00:01.58] Out:123k  [ -====|====- ] Hd:1.9 Clip:0    In:68.1% 00:00:02.97 [00:00:01.39] Out:131k  [      |      ] Hd:1.9 Clip:0    In:72.3% 00:00:03.16 [00:00:01.21] Out:139k  [      |      ] Hd:1.9 Clip:0    In:76.6% 00:00:03.34 [00:00:01.02] Out:147k  [      |      ] Hd:1.9 Clip:0    In:80.8% 00:00:03.53 [00:00:00.84] Out:156k  [      |      ] Hd:1.9 Clip:0    In:85.1% 00:00:03.72 [00:00:00.65] Out:164k  [      |      ] Hd:1.9 Clip:0    In:89.4% 00:00:03.90 [00:00:00.46] Out:172k  [      |      ] Hd:1.9 Clip:0    In:93.6% 00:00:04.09 [00:00:00.28] Out:180k  [      |      ] Hd:1.9 Clip:0    In:97.9% 00:00:04.27 [00:00:00.09] Out:188k  [-=====|=====-] Hd:1.9 Clip:0    In:100%  00:00:04.37 [00:00:00.00] Out:193k  [      |      ] Hd:1.9 Clip:0    In:100%  00:00:04.37 [00:00:00.00] Out:193k  [      |      ] Hd:1.9 Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 17:40:50] "POST /saveaudio HTTP/1.1" 200 -
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 623k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:03.53  
+
+In:0.00% 00:00:00.00 [00:00:03.53] Out:0     [      |      ]        Clip:0    In:26.3% 00:00:00.93 [00:00:02.60] Out:41.0k [======|======] Hd:2.3 Clip:0    In:31.6% 00:00:01.11 [00:00:02.42] Out:49.2k [    ==|==    ] Hd:2.3 Clip:0    In:36.8% 00:00:01.30 [00:00:02.23] Out:57.3k [    ==|==    ] Hd:2.3 Clip:0    In:42.1% 00:00:01.49 [00:00:02.04] Out:65.5k [!=====|=====!] Hd:0.9 Clip:0    In:47.4% 00:00:01.67 [00:00:01.86] Out:73.7k [======|======] Hd:0.9 Clip:0    In:52.6% 00:00:01.86 [00:00:01.67] Out:81.9k [-=====|=====-] Hd:0.9 Clip:0    In:57.9% 00:00:02.04 [00:00:01.49] Out:90.1k [======|======] Hd:0.9 Clip:0    In:63.2% 00:00:02.23 [00:00:01.30] Out:98.3k [ =====|===== ] Hd:0.9 Clip:0    In:68.4% 00:00:02.41 [00:00:01.11] Out:106k  [     =|=     ] Hd:0.9 Clip:0    In:73.7% 00:00:02.60 [00:00:00.93] Out:115k  [      |      ] Hd:0.9 Clip:0    In:78.9% 00:00:02.79 [00:00:00.74] Out:123k  [      |      ] Hd:0.9 Clip:0    In:84.2% 00:00:02.97 [00:00:00.56] Out:131k  [      |      ] Hd:0.9 Clip:0    In:89.5% 00:00:03.16 [00:00:00.37] Out:139k  [ -====|====- ] Hd:0.9 Clip:0    In:94.7% 00:00:03.34 [00:00:00.19] Out:147k  [      |      ] Hd:0.9 Clip:0    In:100%  00:00:03.53 [00:00:00.00] Out:156k  [      |      ] Hd:0.9 Clip:0    In:100%  00:00:03.53 [00:00:00.00] Out:156k  [      |      ] Hd:0.9 Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 17:41:08] "POST /saveaudio HTTP/1.1" 200 -
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 475k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:02.69  
+
+In:0.00% 00:00:00.00 [00:00:02.69] Out:0     [      |      ]        Clip:0    In:34.5% 00:00:00.93 [00:00:01.76] Out:41.0k [======|======] Hd:2.3 Clip:0    In:41.4% 00:00:01.11 [00:00:01.58] Out:49.2k [-=====|=====-] Hd:2.3 Clip:0    In:48.3% 00:00:01.30 [00:00:01.39] Out:57.3k [  ====|====  ] Hd:2.3 Clip:0    In:55.2% 00:00:01.49 [00:00:01.21] Out:65.5k [     -|-     ] Hd:2.3 Clip:0    In:62.1% 00:00:01.67 [00:00:01.02] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:69.0% 00:00:01.86 [00:00:00.84] Out:81.9k [      |      ] Hd:2.3 Clip:0    In:75.9% 00:00:02.04 [00:00:00.65] Out:90.1k [      |      ] Hd:2.3 Clip:0    In:82.8% 00:00:02.23 [00:00:00.46] Out:98.3k [      |      ] Hd:2.3 Clip:0    In:89.6% 00:00:02.41 [00:00:00.28] Out:106k  [      |      ] Hd:2.3 Clip:0    In:96.5% 00:00:02.60 [00:00:00.09] Out:115k  [     -|-     ] Hd:2.3 Clip:0    In:100%  00:00:02.69 [00:00:00.00] Out:119k  [      |      ] Hd:2.3 Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 17:41:30] "POST /saveaudio HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:26:18] "GET / HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:26:18] "GET /static/css/layout.css HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:26:18] "GET /static/img/rasp_940x360.png HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:18] "GET /favicon.ico HTTP/1.1" 404 -
+143.107.182.231 - - [21/May/2018 18:26:18] "GET /service-worker.js HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:26:21] "GET /getapp HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:26:21] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:21] "GET /static/img/940x360.gif HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:26:22] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:23] "GET /camera HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:26:23] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:23] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:23] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:23] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:23] "GET /static/js/recorder.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:24] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:26:25] "GET /video_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:26:25] "GET /audio_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:27:46] "GET /camera HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:27:46] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:27:46] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:27:46] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:27:46] "GET /static/js/recorder.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:27:46] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:27:47] "GET /service-worker.js HTTP/1.1" 304 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+143.107.182.231 - - [21/May/2018 18:27:48] "GET /video_feed HTTP/1.1" 200 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+143.107.182.231 - - [21/May/2018 18:28:08] "GET /camera HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:28:09] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:28:09] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:28:09] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:28:09] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:28:09] "GET /static/js/recorder.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:28:09] "GET /video_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:28:09] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:28:10] "GET /audio_feed HTTP/1.1" 200 -
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 623k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:03.53  
+
+In:0.00% 00:00:00.00 [00:00:03.53] Out:0     [      |      ]        Clip:0    In:26.3% 00:00:00.93 [00:00:02.60] Out:41.0k [======|======] Hd:2.3 Clip:0    In:31.6% 00:00:01.11 [00:00:02.42] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:36.8% 00:00:01.30 [00:00:02.23] Out:57.3k [      |      ] Hd:2.3 Clip:0    In:42.1% 00:00:01.49 [00:00:02.04] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:47.4% 00:00:01.67 [00:00:01.86] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:52.6% 00:00:01.86 [00:00:01.67] Out:81.9k [      |      ] Hd:2.3 Clip:0    In:57.9% 00:00:02.04 [00:00:01.49] Out:90.1k [      |      ] Hd:2.3 Clip:0    In:63.2% 00:00:02.23 [00:00:01.30] Out:98.3k [      |      ] Hd:2.3 Clip:0    In:68.4% 00:00:02.41 [00:00:01.11] Out:106k  [      |      ] Hd:2.3 Clip:0    In:73.7% 00:00:02.60 [00:00:00.93] Out:115k  [      |      ] Hd:2.3 Clip:0    In:78.9% 00:00:02.79 [00:00:00.74] Out:123k  [      |      ] Hd:2.3 Clip:0    In:84.2% 00:00:02.97 [00:00:00.56] Out:131k  [      |      ] Hd:2.3 Clip:0    In:89.5% 00:00:03.16 [00:00:00.37] Out:139k  [      |      ] Hd:2.3 Clip:0    In:94.7% 00:00:03.34 [00:00:00.19] Out:147k  [      |      ] Hd:2.3 Clip:0    In:100%  00:00:03.53 [00:00:00.00] Out:156k  [      |      ] Hd:2.3 Clip:0    In:100%  00:00:03.53 [00:00:00.00] Out:156k  [      |      ] Hd:2.3 Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 18:28:21] "POST /saveaudio HTTP/1.1" 200 -
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 639k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:03.62  
+
+In:0.00% 00:00:00.00 [00:00:03.62] Out:0     [      |      ]        Clip:0    In:25.6% 00:00:00.93 [00:00:02.69] Out:41.0k [======|======] Hd:2.3 Clip:0    In:30.8% 00:00:01.11 [00:00:02.51] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:35.9% 00:00:01.30 [00:00:02.32] Out:57.3k [      |      ] Hd:2.3 Clip:0    In:41.0% 00:00:01.49 [00:00:02.14] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:46.2% 00:00:01.67 [00:00:01.95] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:51.3% 00:00:01.86 [00:00:01.76] Out:81.9k [      |      ] Hd:2.3 Clip:0    In:56.4% 00:00:02.04 [00:00:01.58] Out:90.1k [      |      ] Hd:2.3 Clip:0    In:61.5% 00:00:02.23 [00:00:01.39] Out:98.3k [      |      ] Hd:2.3 Clip:0    In:66.7% 00:00:02.41 [00:00:01.21] Out:106k  [      |      ] Hd:2.3 Clip:0    In:71.8% 00:00:02.60 [00:00:01.02] Out:115k  [      |      ] Hd:2.3 Clip:0    In:76.9% 00:00:02.79 [00:00:00.84] Out:123k  [      |      ] Hd:2.3 Clip:0    In:82.0% 00:00:02.97 [00:00:00.65] Out:131k  [      |      ] Hd:2.3 Clip:0    In:87.2% 00:00:03.16 [00:00:00.46] Out:139k  [      |      ] Hd:2.3 Clip:0    In:92.3% 00:00:03.34 [00:00:00.28] Out:147k  [      |      ] Hd:2.3 Clip:0    In:97.4% 00:00:03.53 [00:00:00.09] Out:156k  [      |      ] Hd:2.3 Clip:0    In:100%  00:00:03.62 [00:00:00.00] Out:160k  [      |      ] Hd:2.3 Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 18:28:33] "POST /saveaudio HTTP/1.1" 200 -
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 885k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:05.02  
+
+In:0.00% 00:00:00.00 [00:00:05.02] Out:0     [      |      ]        Clip:0    In:18.5% 00:00:00.93 [00:00:04.09] Out:41.0k [======|======] Hd:2.3 Clip:0    In:22.2% 00:00:01.11 [00:00:03.90] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:25.9% 00:00:01.30 [00:00:03.72] Out:57.3k [      |      ] Hd:2.3 Clip:0    In:29.6% 00:00:01.49 [00:00:03.53] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:33.3% 00:00:01.67 [00:00:03.34] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:37.0% 00:00:01.86 [00:00:03.16] Out:81.9k [      |      ] Hd:2.3 Clip:0    In:40.7% 00:00:02.04 [00:00:02.97] Out:90.1k [      |      ] Hd:2.3 Clip:0    In:44.4% 00:00:02.23 [00:00:02.79] Out:98.3k [      |      ] Hd:2.3 Clip:0    In:48.1% 00:00:02.41 [00:00:02.60] Out:106k  [      |      ] Hd:2.3 Clip:0    In:51.8% 00:00:02.60 [00:00:02.42] Out:115k  [      |      ] Hd:2.3 Clip:0    In:55.6% 00:00:02.79 [00:00:02.23] Out:123k  [      |      ] Hd:2.3 Clip:0    In:59.3% 00:00:02.97 [00:00:02.04] Out:131k  [      |      ] Hd:2.3 Clip:0    In:63.0% 00:00:03.16 [00:00:01.86] Out:139k  [      |      ] Hd:2.3 Clip:0    In:66.7% 00:00:03.34 [00:00:01.67] Out:147k  [      |      ] Hd:2.3 Clip:0    In:70.4% 00:00:03.53 [00:00:01.49] Out:156k  [      |      ] Hd:2.3 Clip:0    In:74.1% 00:00:03.72 [00:00:01.30] Out:164k  [      |      ] Hd:2.3 Clip:0    In:77.8% 00:00:03.90 [00:00:01.11] Out:172k  [      |      ] Hd:2.3 Clip:0    In:81.5% 00:00:04.09 [00:00:00.93] Out:180k  [      |      ]        Clip:0    In:85.2% 00:00:04.27 [00:00:00.74] Out:188k  [      |      ]        Clip:0    In:88.9% 00:00:04.46 [00:00:00.56] Out:197k  [      |      ]        Clip:0    In:92.6% 00:00:04.64 [00:00:00.37] Out:205k  [      |      ]        Clip:0    In:96.3% 00:00:04.83 [00:00:00.19] Out:213k  [      |      ]        Clip:0    In:100%  00:00:05.02 [00:00:00.00] Out:221k  [      |      ]        Clip:0    In:100%  00:00:05.02 [00:00:00.00] Out:221k  [      |      ]        Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 18:28:48] "POST /saveaudio HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:29:03] "GET / HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:29:03] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:03] "GET /static/img/rasp_940x360.png HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:04] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:04] "GET /camera HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:29:05] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:05] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:05] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:05] "GET /static/js/recorder.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:05] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:05] "GET /video_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:29:06] "GET /service-worker.js HTTP/1.1" 304 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 918k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:05.20  
+
+In:0.00% 00:00:00.00 [00:00:05.20] Out:0     [      |      ]        Clip:0    In:17.9% 00:00:00.93 [00:00:04.27] Out:41.0k [======|======] Hd:2.3 Clip:0    In:21.4% 00:00:01.11 [00:00:04.09] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:25.0% 00:00:01.30 [00:00:03.90] Out:57.3k [      |      ] Hd:2.3 Clip:0    In:28.6% 00:00:01.49 [00:00:03.72] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:32.1% 00:00:01.67 [00:00:03.53] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:35.7% 00:00:01.86 [00:00:03.34] Out:81.9k [      |      ] Hd:2.3 Clip:0    In:39.3% 00:00:02.04 [00:00:03.16] Out:90.1k [      |      ] Hd:2.3 Clip:0    In:42.9% 00:00:02.23 [00:00:02.97] Out:98.3k [      |      ] Hd:2.3 Clip:0    In:46.4% 00:00:02.41 [00:00:02.79] Out:106k  [      |      ] Hd:2.3 Clip:0    In:50.0% 00:00:02.60 [00:00:02.60] Out:115k  [      |      ] Hd:2.3 Clip:0    In:53.6% 00:00:02.79 [00:00:02.42] Out:123k  [      |      ] Hd:2.3 Clip:0    In:57.1% 00:00:02.97 [00:00:02.23] Out:131k  [      |      ] Hd:2.3 Clip:0    In:60.7% 00:00:03.16 [00:00:02.04] Out:139k  [      |      ] Hd:2.3 Clip:0    In:64.3% 00:00:03.34 [00:00:01.86] Out:147k  [      |      ] Hd:2.3 Clip:0    In:67.9% 00:00:03.53 [00:00:01.67] Out:156k  [      |      ] Hd:2.3 Clip:0    In:71.4% 00:00:03.72 [00:00:01.49] Out:164k  [      |      ] Hd:2.3 Clip:0    In:75.0% 00:00:03.90 [00:00:01.30] Out:172k  [      |      ] Hd:2.3 Clip:0    In:78.6% 00:00:04.09 [00:00:01.11] Out:180k  [      |      ]        Clip:0    In:82.1% 00:00:04.27 [00:00:00.93] Out:188k  [      |      ]        Clip:0    In:85.7% 00:00:04.46 [00:00:00.74] Out:197k  [      |      ]        Clip:0    In:89.3% 00:00:04.64 [00:00:00.56] Out:205k  [      |      ]        Clip:0    In:92.9% 00:00:04.83 [00:00:00.37] Out:213k  [      |      ]        Clip:0    In:96.4% 00:00:05.02 [00:00:00.19] Out:221k  [      |      ]        Clip:0    In:100%  00:00:05.20 [00:00:00.00] Out:229k  [      |      ]        Clip:0    In:100%  00:00:05.20 [00:00:00.00] Out:229k  [      |      ]        Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 18:29:42] "POST /saveaudio HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /getapp HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /static/img/940x360.gif HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /camera HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:49] "GET /static/js/recorder.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:50] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:29:51] "GET /audio_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:29:51] "GET /video_feed HTTP/1.1" 200 -
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 590k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:03.34  
+
+In:0.00% 00:00:00.00 [00:00:03.34] Out:0     [      |      ]        Clip:0    In:27.8% 00:00:00.93 [00:00:02.42] Out:41.0k [======|======] Hd:2.3 Clip:0    In:33.3% 00:00:01.11 [00:00:02.23] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:38.9% 00:00:01.30 [00:00:02.04] Out:57.3k [      |      ] Hd:2.3 Clip:0    In:44.4% 00:00:01.49 [00:00:01.86] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:50.0% 00:00:01.67 [00:00:01.67] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:55.6% 00:00:01.86 [00:00:01.49] Out:81.9k [      |      ] Hd:2.3 Clip:0    In:61.1% 00:00:02.04 [00:00:01.30] Out:90.1k [      |      ] Hd:2.3 Clip:0    In:66.7% 00:00:02.23 [00:00:01.11] Out:98.3k [      |      ] Hd:2.3 Clip:0    In:72.2% 00:00:02.41 [00:00:00.93] Out:106k  [      |      ] Hd:2.3 Clip:0    In:77.8% 00:00:02.60 [00:00:00.74] Out:115k  [      |      ] Hd:2.3 Clip:0    In:83.3% 00:00:02.79 [00:00:00.56] Out:123k  [      |      ] Hd:2.3 Clip:0    In:88.9% 00:00:02.97 [00:00:00.37] Out:131k  [      |      ] Hd:2.3 Clip:0    In:94.4% 00:00:03.16 [00:00:00.19] Out:139k  [      |      ] Hd:2.3 Clip:0    In:100%  00:00:03.34 [00:00:00.00] Out:147k  [      |      ] Hd:2.3 Clip:0    In:100%  00:00:03.34 [00:00:00.00] Out:147k  [      |      ] Hd:2.3 Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 18:30:35] "POST /saveaudio HTTP/1.1" 200 -
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 344k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:01.95  
+
+In:0.00% 00:00:00.00 [00:00:01.95] Out:0     [      |      ]        Clip:0    In:47.6% 00:00:00.93 [00:00:01.02] Out:41.0k [======|======] Hd:2.3 Clip:0    In:57.1% 00:00:01.11 [00:00:00.84] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:66.7% 00:00:01.30 [00:00:00.65] Out:57.3k [      |      ] Hd:2.3 Clip:0    In:76.2% 00:00:01.49 [00:00:00.46] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:85.7% 00:00:01.67 [00:00:00.28] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:95.2% 00:00:01.86 [00:00:00.09] Out:81.9k [      |      ] Hd:2.3 Clip:0    In:100%  00:00:01.95 [00:00:00.00] Out:86.0k [      |      ] Hd:2.3 Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 18:30:40] "POST /saveaudio HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:32:11] "GET / HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:32:11] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:11] "GET /static/img/rasp_940x360.png HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:12] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:12] "GET /getapp HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:32:12] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:12] "GET /static/img/940x360.gif HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:13] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:14] "GET /camera HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 18:32:14] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:14] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:14] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:14] "GET /static/js/recorder.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:14] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 18:32:15] "GET /service-worker.js HTTP/1.1" 304 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+143.107.182.231 - - [21/May/2018 18:32:15] "GET /video_feed HTTP/1.1" 200 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Traceback (most recent call last):
+  File "app.py", line 3, in <module>
+    from camera_opencv import Camera
+  File "/home/pi/sel373/server/camera_opencv.py", line 1, in <module>
+    import cv2
+ImportError: No module named cv2
+Traceback (most recent call last):
+  File "app.py", line 3, in <module>
+    from camera_opencv import Camera
+  File "/home/pi/sel373/server/camera_opencv.py", line 1, in <module>
+    import cv2
+ImportError: No module named cv2
+Traceback (most recent call last):
+  File "app.py", line 3, in <module>
+    from camera_opencv import Camera
+  File "/home/pi/sel373/server/camera_opencv.py", line 1, in <module>
+    import cv2
+ImportError: No module named cv2
+ * Running on https://10.235.10.44:8080/ (Press CTRL+C to quit)
+143.107.182.231 - - [21/May/2018 19:37:18] "GET /camera HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:18] "GET /static/css/layout.css HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:18] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:18] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:18] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:18] "GET /static/js/recorder.js HTTP/1.1" 304 -
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.front.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM front
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround21
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround21
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround40.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround40
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround41
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround50
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround51.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround51
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.surround71.0:CARD=0'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM surround71
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM iec958
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM spdif
+ALSA lib confmisc.c:1281:(snd_func_refer) Unable to find definition 'cards.bcm2835_alsa.pcm.iec958.0:CARD=0,AES0=4,AES1=130,AES2=0,AES3=2'
+ALSA lib conf.c:4528:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5007:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM spdif
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.hdmi
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.hdmi
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.modem
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.modem
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.phoneline
+ALSA lib pcm.c:2495:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.phoneline
+connect(2) call to /tmp/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+143.107.182.231 - - [21/May/2018 19:37:19] "GET /service-worker.js HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:19] "GET /video_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:19] "GET /audio_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:20] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:20] "GET /favicon.ico HTTP/1.1" 404 -
+143.107.182.231 - - [21/May/2018 19:37:48] "GET /video_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:49] "POST /subscription HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:49] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:50] "GET /service-worker.js HTTP/1.1" 304 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+143.107.182.231 - - [21/May/2018 19:37:55] "GET /camera HTTP/1.1" 200 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+143.107.182.231 - - [21/May/2018 19:37:55] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:55] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:55] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:55] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:55] "GET /static/js/recorder.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:37:55] "GET /video_feed HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:56] "POST /subscription HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:37:56] "GET /service-worker.js HTTP/1.1" 304 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 672k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:03.81  
+
+In:0.00% 00:00:00.00 [00:00:03.81] Out:0     [      |      ]        Clip:0    In:24.4% 00:00:00.93 [00:00:02.88] Out:41.0k [======|======] Hd:2.3 Clip:0    In:29.3% 00:00:01.11 [00:00:02.69] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:34.1% 00:00:01.30 [00:00:02.51] Out:57.3k [      |      ] Hd:2.3 Clip:0    In:39.0% 00:00:01.49 [00:00:02.32] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:43.9% 00:00:01.67 [00:00:02.14] Out:73.7k [      |      ] Hd:2.3 Clip:0    In:48.8% 00:00:01.86 [00:00:01.95] Out:81.9k [      |      ] Hd:2.3 Clip:0    In:53.7% 00:00:02.04 [00:00:01.76] Out:90.1k [      |      ] Hd:2.3 Clip:0    In:58.5% 00:00:02.23 [00:00:01.58] Out:98.3k [      |      ] Hd:2.3 Clip:0    In:63.4% 00:00:02.41 [00:00:01.39] Out:106k  [      |      ] Hd:2.3 Clip:0    In:68.3% 00:00:02.60 [00:00:01.21] Out:115k  [      |      ] Hd:2.3 Clip:0    In:73.2% 00:00:02.79 [00:00:01.02] Out:123k  [      |      ] Hd:2.3 Clip:0    In:78.0% 00:00:02.97 [00:00:00.84] Out:131k  [      |      ] Hd:2.3 Clip:0    In:82.9% 00:00:03.16 [00:00:00.65] Out:139k  [      |      ] Hd:2.3 Clip:0    In:87.8% 00:00:03.34 [00:00:00.46] Out:147k  [      |      ] Hd:2.3 Clip:0    In:92.7% 00:00:03.53 [00:00:00.28] Out:156k  [      |      ] Hd:2.3 Clip:0    In:97.6% 00:00:03.72 [00:00:00.09] Out:164k  [      |      ] Hd:2.3 Clip:0    In:100%  00:00:03.81 [00:00:00.00] Out:168k  [      |      ] Hd:2.3 Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 19:38:22] "POST /saveaudio HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:38:28] "GET /getapp HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:38:28] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:38:28] "GET /static/img/940x360.gif HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:38:29] "GET /service-worker.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:38:33] "GET /camera HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:38:34] "GET /static/css/layout.css HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:38:34] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:38:35] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:38:35] "GET /static/js/microfone.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:38:36] "GET /static/js/recorder.js HTTP/1.1" 304 -
+143.107.182.231 - - [21/May/2018 19:38:36] "POST /subscription HTTP/1.1" 200 -
+143.107.182.231 - - [21/May/2018 19:38:36] "GET /video_feed HTTP/1.1" 200 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+143.107.182.231 - - [21/May/2018 19:38:38] "GET /service-worker.js HTTP/1.1" 304 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+play WARN alsa: can't encode 32-bit Signed Integer PCM
+
+out.wav:
+
+ File Size: 967k      Bit Rate: 1.41M
+  Encoding: Signed PCM    
+  Channels: 1 @ 32-bit   
+Samplerate: 44100Hz      
+Replaygain: off         
+  Duration: 00:00:05.48  
+
+In:0.00% 00:00:00.00 [00:00:05.48] Out:0     [      |      ]        Clip:0    In:16.9% 00:00:00.93 [00:00:04.55] Out:41.0k [======|======] Hd:2.3 Clip:0    In:20.3% 00:00:01.11 [00:00:04.37] Out:49.2k [      |      ] Hd:2.3 Clip:0    In:23.7% 00:00:01.30 [00:00:04.18] Out:57.3k [     -|-     ] Hd:2.3 Clip:0    In:27.1% 00:00:01.49 [00:00:03.99] Out:65.5k [      |      ] Hd:2.3 Clip:0    In:30.5% 00:00:01.67 [00:00:03.81] Out:73.7k [     =|=     ] Hd:2.3 Clip:0    In:33.9% 00:00:01.86 [00:00:03.62] Out:81.9k [======|======] Hd:1.4 Clip:0    In:37.3% 00:00:02.04 [00:00:03.44] Out:90.1k [-=====|=====-] Hd:1.4 Clip:0    In:40.7% 00:00:02.23 [00:00:03.25] Out:98.3k [-=====|=====-] Hd:1.4 Clip:0    In:44.1% 00:00:02.41 [00:00:03.07] Out:106k  [-=====|=====-] Hd:1.4 Clip:0    In:47.5% 00:00:02.60 [00:00:02.88] Out:115k  [   ===|===   ] Hd:1.4 Clip:0    In:50.8% 00:00:02.79 [00:00:02.69] Out:123k  [      |      ] Hd:1.4 Clip:0    In:54.2% 00:00:02.97 [00:00:02.51] Out:131k  [      |      ] Hd:1.4 Clip:0    In:57.6% 00:00:03.16 [00:00:02.32] Out:139k  [      |      ] Hd:1.4 Clip:0    In:61.0% 00:00:03.34 [00:00:02.14] Out:147k  [      |      ] Hd:1.4 Clip:0    In:64.4% 00:00:03.53 [00:00:01.95] Out:156k  [      |      ] Hd:1.4 Clip:0    In:67.8% 00:00:03.72 [00:00:01.76] Out:164k  [      |      ] Hd:1.4 Clip:0    In:71.2% 00:00:03.90 [00:00:01.58] Out:172k  [      |      ] Hd:1.4 Clip:0    In:74.6% 00:00:04.09 [00:00:01.39] Out:180k  [      |      ] Hd:1.4 Clip:0    In:78.0% 00:00:04.27 [00:00:01.21] Out:188k  [      |      ] Hd:1.4 Clip:0    In:81.4% 00:00:04.46 [00:00:01.02] Out:197k  [      |      ] Hd:1.4 Clip:0    In:84.7% 00:00:04.64 [00:00:00.84] Out:205k  [      |      ] Hd:1.4 Clip:0    In:88.1% 00:00:04.83 [00:00:00.65] Out:213k  [      |      ] Hd:1.4 Clip:0    In:91.5% 00:00:05.02 [00:00:00.46] Out:221k  [      |      ]        Clip:0    In:94.9% 00:00:05.20 [00:00:00.28] Out:229k  [      |      ]        Clip:0    In:98.3% 00:00:05.39 [00:00:00.09] Out:238k  [      |      ]        Clip:0    In:100%  00:00:05.48 [00:00:00.00] Out:242k  [      |      ]        Clip:0    
+Done.
+143.107.182.231 - - [21/May/2018 19:39:10] "POST /saveaudio HTTP/1.1" 200 -
+177.181.255.249 - - [21/May/2018 20:32:52] "POST /subscription HTTP/1.1" 200 -
+177.181.255.249 - - [21/May/2018 20:32:52] "GET /service-worker.js HTTP/1.1" 304 -
+177.181.255.249 - - [21/May/2018 20:32:53] "GET /video_feed HTTP/1.1" 200 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+177.181.255.249 - - [21/May/2018 20:32:56] "GET /camera HTTP/1.1" 200 -
+177.181.255.249 - - [21/May/2018 20:32:57] "GET /static/css/layout.css HTTP/1.1" 304 -
+177.181.255.249 - - [21/May/2018 20:32:57] "GET /static/js/push-subscribe.js HTTP/1.1" 304 -
+177.181.255.249 - - [21/May/2018 20:32:57] "GET /static/js/recorder.js HTTP/1.1" 304 -
+177.181.255.249 - - [21/May/2018 20:32:57] "GET /static/js/microfone.js HTTP/1.1" 304 -
+177.181.255.249 - - [21/May/2018 20:32:57] "GET /static/js/camera-buttons.js HTTP/1.1" 304 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+177.181.255.249 - - [21/May/2018 20:32:57] "POST /subscription HTTP/1.1" 200 -
+177.181.255.249 - - [21/May/2018 20:32:57] "GET /video_feed HTTP/1.1" 200 -
+177.181.255.249 - - [21/May/2018 20:32:57] "GET /service-worker.js HTTP/1.1" 304 -
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
+Expression 'ret' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1736
+Expression 'AlsaOpen( &alsaApi->baseHostApiRep, params, streamDir, &self->pcm )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 1904
+Expression 'PaAlsaStreamComponent_Initialize( &self->capture, alsaApi, inParams, StreamDirection_In, NULL != callback )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2171
+Expression 'PaAlsaStream_Initialize( stream, alsaHostApi, inputParameters, outputParameters, sampleRate, framesPerBuffer, callback, streamFlags, userData )' failed in 'src/hostapi/alsa/pa_linux_alsa.c', line: 2840
